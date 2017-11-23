@@ -7,3 +7,12 @@ Users were selected at random for inclusion. All selected users had rated at lea
 The data are contained in six files, `genome-scores.csv`, `genome-tags.csv`, `links.csv`, `movies.csv`, `ratings.csv` and `tags.csv`. More details about the contents and use of all these files follows.
 
 This and other GroupLens data sets are publicly available for download at <http://grouplens.org/datasets/>.
+
+## Implementations
+
+Recommendation system will be implemented using 3 methods
+
+1. Traditional relational database based using MySQL and Python
+2. cKNN based using hadoop for distributed processing
+3. Graph database based using ArangoDB
+

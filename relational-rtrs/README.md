@@ -64,32 +64,32 @@ After download the dataset, you need to import data from CSV to Sql:
 
 Now to import data:
 
-# TABLE movies
+## TABLE movies
 
 ```bash
 LOAD DATA LOCAL INFILE '/home/hduser1/Downloads/ml-20m/movies.csv' INTO TABLE movies FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\r\n' IGNORE 1 ROWS;
 ```
-# TABLE tags
+## TABLE tags
 
 ```bash
 LOAD DATA LOCAL INFILE '/home/hduser1/Downloads/ml-20m/tags.csv' INTO TABLE tags FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\r\n' IGNORE 1 ROWS;
 ```
-# TABLE ratings
+## TABLE ratings
 
 ```bash
 LOAD DATA LOCAL INFILE '/home/hduser1/Downloads/ml-20m/rating.csv' INTO TABLE ratings FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\r\n' IGNORE 1 ROWS;
 ```
-# TABLE genome_scores
+## TABLE genome_scores
 
 ```bash
 LOAD DATA LOCAL INFILE '/home/hduser1/Downloads/ml-20m/genome-scores.csv' INTO TABLE genome-scores FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\r\n' IGNORE 1 ROWS;
 ```
-# TABLE genome_tags
+## TABLE genome_tags
 
 ```bash
 LOAD DATA LOCAL INFILE '/home/hduser1/Downloads/ml-20m/genome-tags.csv' INTO TABLE genome_tags FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\r\n' IGNORE 1 ROWS;
 ```
-# TABLE links
+## TABLE links
 
 ```bash
 LOAD DATA LOCAL INFILE '/home/hduser1/Downloads/ml-20m/links.csv' INTO TABLE links FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\r\n' IGNORE 1 ROWS;

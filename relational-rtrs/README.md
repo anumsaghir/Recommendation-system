@@ -52,4 +52,60 @@ Now create tables in the DB by executing the db_setup.sql file against the datab
 ```bash
 mysql movies_db -u anum -ppakistan < db_setup.sql
 ```
+## For Dataset: 
+
+you can download the dataset from the link below:
+http://files.grouplens.org/datasets/movielens/ml-20m.zip
+
+and discription of dataset:
+https://grouplens.org/datasets/movielens/
+
+After download the dataset, you need to import data from CSV to Sql:
+
+Now to import data:
+
+# TABLE movies
+
+```bash
+LOAD DATA LOCAL INFILE '/home/hduser1/Downloads/ml-20m/movies.csv' INTO TABLE movies FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\r\n' IGNORE 1 ROWS;
+```
+# TABLE tags
+
+```bash
+LOAD DATA LOCAL INFILE '/home/hduser1/Downloads/ml-20m/tags.csv' INTO TABLE tags FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\r\n' IGNORE 1 ROWS;
+```
+# TABLE ratings
+
+```bash
+LOAD DATA LOCAL INFILE '/home/hduser1/Downloads/ml-20m/rating.csv' INTO TABLE ratings FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\r\n' IGNORE 1 ROWS;
+```
+# TABLE genome_scores
+
+```bash
+LOAD DATA LOCAL INFILE '/home/hduser1/Downloads/ml-20m/genome-scores.csv' INTO TABLE genome-scores FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\r\n' IGNORE 1 ROWS;
+```
+# TABLE genome_tags
+
+```bash
+LOAD DATA LOCAL INFILE '/home/hduser1/Downloads/ml-20m/genome-tags.csv' INTO TABLE genome_tags FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\r\n' IGNORE 1 ROWS;
+```
+# TABLE links
+
+```bash
+LOAD DATA LOCAL INFILE '/home/hduser1/Downloads/ml-20m/links.csv' INTO TABLE links FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\r\n' IGNORE 1 ROWS;
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

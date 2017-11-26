@@ -13,7 +13,7 @@ class Movie(Base):
     genres = Column(Unicode(500))
 
 
-class Similarities(Base):
+class Similarity(Base):
     __tablename__ = 'similarities'
 
     movie_id_1 = Column(Integer, primary_key=True)

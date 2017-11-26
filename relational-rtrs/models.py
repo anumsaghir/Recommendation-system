@@ -12,14 +12,13 @@ class Movie(Base):
     title = Column(Unicode(500))
     genres = Column(Unicode(500))
 
+
 class Similarities(Base):
     __tablename__ = 'similarities'
 
-    movie_id_1 = Column(Integer)
-    movie_id_2 = Column(Integer)
+    movie_id_1 = Column(Integer, primary_key=True)
+    movie_id_2 = Column(Integer, primary_key=True)
     similarity_index = Column(float) 
-    PRIMARY KEY(user_id, movie_id)
-     
 
 
 def get_db():

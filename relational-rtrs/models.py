@@ -1,5 +1,5 @@
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy import create_engine, Column, Integer, Unicode
+from sqlalchemy import create_engine, Column, Integer, Unicode, Float
 from sqlalchemy.orm import sessionmaker
 
 Base = declarative_base()
@@ -18,7 +18,7 @@ class Similarities(Base):
 
     movie_id_1 = Column(Integer, primary_key=True)
     movie_id_2 = Column(Integer, primary_key=True)
-    similarity_index = Column(float) 
+    similarity_index = Column(Float)
 
 
 def get_db():

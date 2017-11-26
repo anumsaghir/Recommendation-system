@@ -37,7 +37,8 @@ create table ratings(
     rating float not null, 
     timestamp int unsigned not null, 
     PRIMARY KEY(user_id, movie_id)
-); 
+);
+DROP TABLE IF EXISTS similarities; 
 create table similarities(
     movie_id_1 int not null, 
     movie_id_2 int not null, 

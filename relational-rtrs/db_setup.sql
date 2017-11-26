@@ -38,5 +38,11 @@ create table ratings(
     timestamp int unsigned not null, 
     PRIMARY KEY(user_id, movie_id)
 ); 
+create table similarities(
+    movie_id_1 int not null, 
+    movie_id_2 int not null, 
+    similarity_index float not null,  
+    PRIMARY KEY(movie_id_1, movie_id_2)
+);
 
 

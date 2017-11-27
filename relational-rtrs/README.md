@@ -95,6 +95,87 @@ LOAD DATA LOCAL INFILE '/home/hduser1/Downloads/ml-20m/genome-tags.csv' INTO TAB
 LOAD DATA LOCAL INFILE '/home/hduser1/Downloads/ml-20m/links.csv' INTO TABLE links FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\r\n' IGNORE 1 ROWS;
 ```
 
+## Create & Activate a virtual Enviroment:
+```bash
+source py35env/bin/activate
+``` 
+because our project is independent from operating system python version.
+
+## Python to mysql Connectivity:
+Need to Install library to access pythom from mysql
+```bash
+sudo apt install python3-dev
+```
+```bash
+sudo apt-get install libmysqlclient-dev
+```
+then,
+```bash
+pip install mysqlclient
+```
+
+## Install sqlalchemy:
+```bash
+pip install sqlalchemy
+```
+Now to get connectivity to mysql from sqlalchemy
+
+### In Ipython shell:
+```bash
+from sqlalchemy import create_engine
+engine = create_engine('mysql+mysqldb://anum:pakistan@localhost/movies_db')
+recs = engine.execute("select * from movies limit 10")
+print(recs)
+```
+### May install another lib:
+```bash
+pip install pymysql
+from sqlalchemy import create_engine
+engine = create_engine('mysql+pymysql://anum:pakistan@localhost/movies_db')
+recs = engine.execute("select * from movies limit 10")
+print(recs)
+```
+The results are shown in list of lists
+"list containing records and each record is a list". 
+
+for better solution, we can made class for table.
+```bash
+Base = declarative_base()
+
+
+class Movie(Base):
+    __tablename__ = 'movies'
+
+    movie_id = Column(Integer, primary_key=True)
+    title = Column(Unicode(500))
+    genres = Column(Unicode(500))
+
+
+class Similarity(Base):
+    __tablename__ = 'similarities'
+
+    movie_id_1 = Column(Integer, primary_key=True)
+    movie_id_2 = Column(Integer, primary_key=True)
+    similarity_index = Column(Float)
+```
+Now we can treat database records as objects.
+
+### For store Results:
+we need to store results in a database.
+First need to make Table for similarity_index.
+
+3 fields: movie_id_1, movie_id_2, similarity_index
+
+## Calculate similarity between two things (strings, lists, etc):
+def jaccard_index(s1, s2):
+    set1 = set(s1.split(' '))
+    set2 = set(s2.split(' '))
+
+    intersection_cardinality = len(set.intersection(set1, set2))
+    union_cardinality = len(set.union(set1, set2))
+
+    return intersection_cardinality/float(union_cardinality)
+
 
 
 

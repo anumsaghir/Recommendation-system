@@ -1,3 +1,4 @@
+
 """
 To Fatch Records
 """
@@ -12,5 +13,5 @@ for movie in movies:
     i += 1
     
     for second_movie in movies[i:]:
-print("    %i" % second_movie.movie_id))
+print("    %i" % second_movie.movie_id)
 

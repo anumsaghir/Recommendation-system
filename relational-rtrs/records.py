@@ -9,9 +9,9 @@ movies= db.query(Movie).limit(10).all()
 i = 0
 
 for movie in movies:
-    print(movie.movie_id)
     i += 1
     
     for second_movie in movies[i:]:
-print("    %i" % second_movie.movie_id)
+        print(movie.title)
+        print("    %s" % second_movie.title)
 

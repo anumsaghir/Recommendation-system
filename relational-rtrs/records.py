@@ -32,11 +32,8 @@ for movie in movies:
         rec_count += 1
         total_recs += 1
         # insert records in a batch of 100 per commit to speed up insertions
-        if rec_count % 100 == 0:
+        if rec_count % 1000 == 0:
             db.commit()
-            print('.', end='')
-
-        if total_recs % 1000 == 0:
             print("%i records inserted" % total_recs)
 
     if rec_count % 100 != 0:

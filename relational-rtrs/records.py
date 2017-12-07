@@ -17,6 +17,7 @@ for movie in movies:
     print(movie.movie_id)
 
     rec_count = 0
+    total_recs = 0
     for second_movie in movies[i:]:
         # print(movie.title)
         # print("    %s" % second_movie.title)
@@ -29,9 +30,14 @@ for movie in movies:
         db.add(r)
 
         rec_count += 1
+        total_recs += 1
         # insert records in a batch of 100 per commit to speed up insertions
         if rec_count % 100 == 0:
             db.commit()
+            print('.', end='')
+
+        if total_recs % 1000 == 0:
+            print("%i records inserted" % total_recs)
 
     if rec_count % 100 != 0:
         db.commit()

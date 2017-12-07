@@ -44,9 +44,9 @@ bind-address		= 127.0.0.1
 #
 # * Fine Tuning
 #
-key_buffer_size		= 16M
+key_buffer_size		= 256M
 max_allowed_packet	= 16M
-thread_stack		= 192K
+thread_stack		= 512K
 thread_cache_size       = 8
 # This replaces the startup script and checks MyISAM tables if needed
 # the first time they are touched
@@ -57,8 +57,8 @@ myisam-recover-options  = BACKUP
 #
 # * Query Cache Configuration
 #
-query_cache_limit	= 1M
-query_cache_size        = 16M
+query_cache_limit	= 32M
+query_cache_size        = 128M
 #
 # * Logging and Replication
 #
@@ -102,3 +102,21 @@ max_binlog_size   = 100M
 # ssl-ca=/etc/mysql/cacert.pem
 # ssl-cert=/etc/mysql/server-cert.pem
 # ssl-key=/etc/mysql/server-key.pem
+# CACHES AND LIMITS #
+tmp-table-size                 = 32M
+max-heap-table-size            = 32M
+query-cache-type               = 1
+query-cache-size               = 64M
+max-connections                = 500
+thread-cache-size              = 50
+open-files-limit               = 65535
+table-definition-cache         = 1024
+table-open-cache               = 2048
+
+# INNODB #
+innodb-flush-method            = O_DIRECT
+innodb-log-files-in-group      = 2
+innodb-log-file-size           = 128M
+innodb-flush-log-at-trx-commit = 1
+innodb-file-per-table          = 1
+innodb-buffer-pool-size        = 2G

@@ -5,7 +5,12 @@ i = 0
 rec_count = 10
 for r in res:
     i += 1
-    print(r[2])
+    if(r[0]!= 111351):
+        print(r[0],r[2])
+    else:
+        print(r[1],r[2])
+    
+    
    
 
 

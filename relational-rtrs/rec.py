@@ -8,8 +8,10 @@ if len(sys.argv) != 2:
 movie_id = int(sys.argv[1])
 
 db= get_db()
-res = db.query(Movie).filter_by(movie_id=111351).first()
-print(res.title)
+rec = db.query(Movie).filter_by(movie_id=movie_id).first()
+print(rec.title)
+
+res=db.execute('select * from similarities where movie_id_1=%i or movie_id_2=%i order by similarity_index desc limit 10' % (movie_id, movie_id))
 
 i = 0
 rec_count = 10      

@@ -32,8 +32,8 @@ The birthdays could be stored as a dict like:
     from datetime import date
     
     birthdays = {
-        date(year=1980, month=12, day=12): \['Picolo', 'Goku'\],
-        date(year=19950, month=10, day=1): \['Rob Stark', \]
+        date(year=1980, month=12, day=12): [ 'Picolo', 'Goku' ],
+        date(year=19950, month=10, day=1): [ 'Rob Stark', ]
     }
 
 Example runs:

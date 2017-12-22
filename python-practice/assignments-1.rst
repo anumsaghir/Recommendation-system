@@ -26,6 +26,7 @@ have birthdays today.
 The birthdays could be stored as a dict like:
 
 .. code-block:: python
+
     from datetime import date
     
     birthdays = {

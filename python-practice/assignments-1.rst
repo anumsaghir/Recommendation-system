@@ -4,7 +4,9 @@ Assignment 1 - The number cruncher
 Create a program that takes a number from command line as a command line argument (using sys.argv) and then prints whether the number 
 is odd or even. Additionally the program should also print if the number is prime.
 
-Example runs::
+Example runs:
+
+.. code-block:: shell
 
     $ python3 num_info.py 4
     number 4 is even
@@ -23,16 +25,20 @@ Create a program that has a predefined list of dates (datetime.date objects) sto
 date. Then check to see if today (datetime.date.today()) matches the month and day with any of the dates in the above list (year has to be different as a person has to be at least an year old to have a brithday). If a matching item is found, display the names of people who
 have birthdays today.
 
-The birthdays could be stored as a dict like::
+The birthdays could be stored as a dict like:
+
+.. code-block:: python
 
     from datetime import date
     
     birthdays = {
-        date(year=1980, month=12, day=12): ['Picolo', 'Goku'],
-        date(year=19950, month=10, day=1): ['Rob Stark', ]
+        date(year=1980, month=12, day=12): [ 'Picolo', 'Goku' ],
+        date(year=19950, month=10, day=1): [ 'Rob Stark', ]
     }
 
-Example runs::
+Example runs:
+
+.. code-block:: shell
 
     $ python3 birthday_calendar.py
     Sorry no birthdays today
@@ -55,7 +61,9 @@ Create a program that performs 2 actions.
 If searching by ingredients, multiple ingredients can be specified separating them using commas. Only recipes that match all 
 ingredients should be returned
 
-Example runs::
+Example runs:
+
+.. code-block:: shell
 
     $ python3 cooking_assistant.py
     
@@ -154,7 +162,9 @@ Example runs::
 
     Good bye and happy cooking :-)
 
-**Tip:** Python has a built-in function named input that allows asking user for input, example::
+**Tip:** Python has a built-in function named input that allows asking user for input, example:
+
+.. code-block:: python
 
     # the user will be presented a prompt saying, Please enter your name, and user input will be saved in the name variable
     name = input("Please enter your name: ")

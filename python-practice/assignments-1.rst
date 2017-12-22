@@ -23,14 +23,16 @@ Create a program that has a predefined list of dates (datetime.date objects) sto
 date. Then check to see if today (datetime.date.today()) matches the month and day with any of the dates in the above list (year has to be different as a person has to be at least an year old to have a brithday). If a matching item is found, display the names of people who
 have birthdays today.
 
-The birthdays could be stored as a dict like::
+The birthdays could be stored as a dict like:
 
+.. code-block:: python
     from datetime import date
     
     birthdays = {
         date(year=1980, month=12, day=12): ['Picolo', 'Goku'],
         date(year=19950, month=10, day=1): ['Rob Stark', ]
     }
+
 
 Example runs::
 

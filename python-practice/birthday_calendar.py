@@ -16,11 +16,18 @@ print(today)
 #birthday1 = list(birthdays.values())
 #print(birthday1)
 #def checkTodaysBirthdays():
+
+found_birthdays = False
+
 for b_date, names in birthdays.items():
     if b_date.month == today.month and b_date.day == today.day:
-        print("!!!Happy Birthday!!!", names)
-    else:
-        print("Sorry no birthdays today")
+        found_birthdays = True
+        for name in names:
+          print("!!! Happy Birthday %s !!!" % name)
+
+if found_birthdays is False:    
+    print("Sorry no birthdays today")
+
 #if birthdays.keys().month == date.today().month:
    # if (birthdays.keys().day == date.today().day):
    #     print("Happy Bithday", 'birthdays_value()')

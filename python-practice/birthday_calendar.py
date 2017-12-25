@@ -6,7 +6,7 @@ birthdays = {
     date(year=1950, month=10, day=11): ['John', ],
     date(year=1980, month=12, day=26): ['Sara', ],
     date(year=1950, month=10, day=10): ['Ali', ],
-    date(year=1980, month=12, day=26): ['Herry', ],
+    date(year=1982, month=12, day=26): ['Herry', ],
     date(year=1950, month=10, day=25): ['Shark', ]    
 }
 today = date.today()

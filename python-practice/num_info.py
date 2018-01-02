@@ -11,10 +11,10 @@ else:
    
 if num > 1:  
    for i in range(2,num):
-       if (num % i) == 0:
+      if (num % i) == 0:
            print("Number", num,"is not a prime number")
            break
-   else:
+      else:
        print("Number", num,"is a prime number")
 else:
    print("Number", num,"is not a prime number")

@@ -17,39 +17,46 @@ def add_recipe():
     d['recipe ingredients'] = recipe_ingredients
     return d
 
+
 def search_recipe_name():
-    search_by_name = input ("Enter Recipe Name: ")
+    search_by_name = input ("Enter Recipe name: ")
     for rd in recipes:
         if rd['recipe name'] == search_by_name:
             print("Name: " + rd["recipe name"])
+            print("Ingredients: " + rd["recipe ingredients"])
         else:
             print("Recipe not Found")
+                  
             
 def search_by_ingredients():
     search_by_ingredients = input ("Enter Recipe ingredients: ")
     for rd in recipes:
         if rd['recipe ingredients'] == search_by_ingredients:
+            print("Name: " + rd["recipe name"])
             print("Ingredients: " + rd["recipe ingredients"])
         else:
             print("Recipe not Found")
-
+        
     
 user_choice = main_menu()  
-if user_choice == "a":    
-    new_recipe_dict = add_recipe()   
-    recipes.append(new_recipe_dict)   
-    print("recipe added")
+while user_choice != 'q':
+    if user_choice == "a":    
+        new_recipe_dict = add_recipe()   
+        recipes.append(new_recipe_dict)   
+        print("recipe added")
     
-elif user_choice == "s":
-    search_recipe_name()
+    elif user_choice == "s":
+        search_recipe_name()
     
-elif user_choice == "i":
-    search_by_ingredients()
+    elif user_choice == "i":
+        search_by_ingredients()
+        
+    elif user_choice == "q":
+        print("Good bye and happy cooking :-) ")
     
-elif user_choice == "q":
-    print("Good bye and happy cooking :-) ")
-else:
-    print("wrong choice")
-    
+    else:
+        print("wrong choice")
+        
+    user_choice = main_menu()
 
 

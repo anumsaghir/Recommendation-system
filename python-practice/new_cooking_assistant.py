@@ -50,13 +50,10 @@ while user_choice != 'q':
     
     elif user_choice == "i":
         search_by_ingredients()
-        
-    elif user_choice == "q":
-        print("Good bye and happy cooking :-) ")
     
     else:
         print("wrong choice")
         
     user_choice = main_menu()
 
-
+print("Good bye and happy cooking :-) ")

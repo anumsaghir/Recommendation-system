@@ -4,7 +4,7 @@ To Fatch Records
 """
 
 from models import Movie, Similarity, get_db
-from similarity import jaccard_index
+from similarity import jaccard_index, jaccard_index1
 
 db = get_db()
 movies = db.query(Movie).all()
@@ -22,12 +22,16 @@ for movie in movies:
         # print(movie.title)
         # print("    %s" % second_movie.title)
         s_val = jaccard_index(movie.title, second_movie.title)
+        s1_val = jaccard_index1(movie.genres, second_movie.genres)
         # print(s_val)
         r = Similarity()
+        r1 = Similarity()
         r.movie_id_1 = movie.movie_id
         r.movie_id_2 = second_movie.movie_id
         r.similarity_index = s_val
+        r1.similarity_index = s1_val
         db.add(r)
+        db.add(r1)
 
         rec_count += 1
         total_recs += 1

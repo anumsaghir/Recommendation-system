@@ -18,7 +18,8 @@ class Similarity(Base):
 
     movie_id_1 = Column(Integer, primary_key=True)
     movie_id_2 = Column(Integer, primary_key=True)
-    similarity_index = Column(Float)
+    title_similarity_index = Column(Float)
+    genres_similarity_index = Column(Float)
 
 
 def get_db():

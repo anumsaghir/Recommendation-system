@@ -2,7 +2,7 @@ DROP TABLE IF EXISTS movies;
 create table movies(
     movie_id int unsigned not null primary key,
     title varchar(500) not null,
-    genres varchar(300)
+    genres varchar(300) not null
 );
 DROP TABLE IF EXISTS tags;
 create table tags(
@@ -42,7 +42,8 @@ DROP TABLE IF EXISTS similarities;
 create table similarities(
     movie_id_1 int not null, 
     movie_id_2 int not null, 
-    similarity_index float not null,  
+    title_similarity_index float not null,
+    genres_similarity_index float not null,
     PRIMARY KEY(movie_id_1, movie_id_2)
 );
 

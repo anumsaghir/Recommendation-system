@@ -13,8 +13,7 @@ def jaccard_index(s1, s2):
     return intersection_cardinality/float(union_cardinality)
 
 
-
-def jaccard_index1(s1, s2):
+def genres_jaccard_index(s1, s2):
     set1 = set(s1.split('|'))
     set2 = set(s2.split('|'))
 

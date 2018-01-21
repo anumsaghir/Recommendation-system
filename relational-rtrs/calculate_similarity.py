@@ -4,7 +4,7 @@ To Fatch Records
 """
 
 from models import Movie, Similarity, get_db
-from similarity import jaccard_index, jaccard_index1
+from similarity import jaccard_index, genres_jaccard_index
 
 db = get_db()
 movies = db.query(Movie).all()

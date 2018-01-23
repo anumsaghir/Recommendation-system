@@ -23,6 +23,5 @@ for r in res:
     else:
         m = db.query(Movie).filter_by(movie_id=r[1]).first()
 
-    print("Movie: %s similarity: %f" % (m.title, r[2]))
-    print("Movie: %s similarity: %f" % (m.genres, r[2]))
+    print("Movie: %s - Genres: %s - Similarity: %f" % (m.title, m.genres, r[2]))
     

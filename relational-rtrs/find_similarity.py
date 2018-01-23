@@ -9,7 +9,7 @@ movie_id = int(sys.argv[1])
 
 db= get_db()
 rec = db.query(Movie).filter_by(movie_id=movie_id).first()
-print(rec.title)
+print("Title: {}, Genres: {}".format(rec.title, rec.genres))
 
 res=db.execute('select movie_id_1, movie_id_2, ((title_similarity_index * 1) + (genres_similarity_index * 0.6)) as overall_similarity from similarities where movie_id_1=%i or movie_id_2=%i order by overall_similarity desc limit 10' % (movie_id, movie_id))
 #res=db.execute('select movie_id_1, movie_id_2, ((title_similarity_index * 1) + (genres_similarity_index * 0.6)) as overall_similarity from similarities where movie_id_1=%i or movie_id_2=%i order by ((title_similarity_index * 1) + (genres_similarity_index * 0.6)) limit 10' % (movie_id, movie_id))
@@ -24,3 +24,5 @@ for r in res:
         m = db.query(Movie).filter_by(movie_id=r[1]).first()
 
     print("Movie: %s similarity: %f" % (m.title, r[2]))
+    print("Movie: %s similarity: %f" % (m.genres, r[2]))
+    

@@ -20,18 +20,12 @@ class RecommendationEngine(object):
         """
         self.db = get_db()
 
-    def recommend(self, target_movie_id, num_recommendations):
-        """
-        Recommend movies that are similar to target_movie_id.
-        """
-
-        self.target_movie = self.db.query(Movie).filter_by(movie_id=target_movie_id).first()
-        assert self.target_movie is not None
-
     def get_movie_recommendation_pool(self, pool_size):
         """
         Get a pool of movies that are similar based on Title, genres and tags (ToDo)
         """
+
+        print(" - Getting movies recommendation pool")
 
         query = """
         SELECT movie_id_1, movie_id_2, 
@@ -58,6 +52,17 @@ class RecommendationEngine(object):
                 m = self.db.query(Movie).filter_by(movie_id=r[1]).first()
 
             self.recommendation_pool.append([m, r[2]])
+
+    def recommend(self, target_movie_id, num_recommendations):
+        """
+        Recommend movies that are similar to target_movie_id.
+        """
+
+        print(" - Getting target movie record")
+        self.target_movie = self.db.query(Movie).filter_by(movie_id=target_movie_id).first()
+        assert self.target_movie is not None
+
+        self.get_movie_recommendation_pool(num_recommendations * 10)
 
     def print_recommendations(self):
         """

@@ -85,9 +85,6 @@ class RecommendationEngine(object):
         for rec in res:
             self.rating_similarity[rec[0]] = rec[1]
 
-
-        # TODO: do the actual rating similarity calculation here
-
     def recommend(self, target_movie_id, num_recommendations):
         """
         Recommend movies that are similar to target_movie_id.

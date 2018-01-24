@@ -98,6 +98,7 @@ class RecommendationEngine(object):
         assert self.target_movie is not None
 
         self.get_movie_recommendation_pool(num_recommendations * 10)
+        self.get_ratings_similarity()
 
     def print_recommendations(self):
         """

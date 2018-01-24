@@ -53,6 +53,41 @@ class RecommendationEngine(object):
 
             self.recommendation_pool.append([m, r[2]])
 
+    def get_ratings_similarity(self):
+        """
+        Get ratings similarity between movies in the movie recommendation pool and the
+        target movie.
+        """
+
+        # Get average rating of the target movie
+        query_1 = "SELECT AVG(rating) FROM ratings WHERE movie_id=%i" % self.target_movie.movie_id
+        res = self.db.execute(query_1)
+        target_movie_average_rating = res[0][0]
+
+        pmids = []
+        for rm in self.recommendation_pool:
+            pmids.append(rm[0].movie_id)
+
+        # rating_similarity dict contains movie_ids as keys and difference in rating as value
+        self.rating_similarity = {}
+        query_2 = """
+        SELECT movie_id, ABS(({tmr} - AVG(rating))) as rating_difference
+        FROM ratings r
+        WHERE movie_id IN ({pool_movie_ids})
+        GROUP BY movie_id
+        """.format(
+            tmr=target_movie_average_rating,
+            pool_movie_ids=str(pmids)[1:-1]
+        )
+        print(query_2)
+
+        res = self.db.execute(query_2)
+        for rec in res:
+            self.rating_similarity[rec[0]] = rec[1]
+
+
+        # TODO: do the actual rating similarity calculation here
+
     def recommend(self, target_movie_id, num_recommendations):
         """
         Recommend movies that are similar to target_movie_id.
@@ -75,6 +110,8 @@ class RecommendationEngine(object):
         for rp in self.recommendation_pool:
             print("Movie: %s - Genres: %s - Similarity: %f" % (rp[0].title, rp[0].genres, rp[1]))
 
+        print("-"*100)
+        print(self.rating_similarity)
         print("-"*100)
 
 

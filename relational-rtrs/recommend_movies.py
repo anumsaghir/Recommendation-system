@@ -13,6 +13,7 @@ class RecommendationEngine(object):
 
     TITLE_SIMILARITY_WEIGHT = 1.0
     GENRES_SIMILARITY_WEIGHT = 0.4
+    RATING_SIMILARITY_WEIGHT = 0.2
 
     def __init__(self):
         """
@@ -61,7 +62,7 @@ class RecommendationEngine(object):
 
         # Get average rating of the target movie
         query_1 = "SELECT AVG(rating) FROM ratings WHERE movie_id=%i" % self.target_movie.movie_id
-        res = self.db.execute(query_1)
+        res = self.db.execute(query_1).fetchall()
         target_movie_average_rating = res[0][0]
 
         pmids = []
@@ -81,7 +82,7 @@ class RecommendationEngine(object):
         )
         print(query_2)
 
-        res = self.db.execute(query_2)
+        res = self.db.execute(query_2).fetchall()
         for rec in res:
             self.rating_similarity[rec[0]] = rec[1]
 
@@ -89,6 +90,7 @@ class RecommendationEngine(object):
         """
         Recommend movies that are similar to target_movie_id.
         """
+        
 
         print(" - Getting target movie record")
         self.target_movie = self.db.query(Movie).filter_by(movie_id=target_movie_id).first()
@@ -96,6 +98,19 @@ class RecommendationEngine(object):
 
         self.get_movie_recommendation_pool(num_recommendations * 10)
         self.get_ratings_similarity()
+        
+        self.final_ratings = {}
+        for r in self.recommendation_pool:
+            # r[0] is the movie object, so r[0].movie_id gives you the movie ID
+            # r[1] contains the rating similarity value
+            pool_movie_id = r[0].movie_id
+            similarity = r[1]
+            # self.rating_similarity[pool_movie_id]
+            self.final_ratings[pool_movie_id] = similarity - (self.rating_similarity[pool_movie_id] * self.RATING_SIMILARITY_WEIGHT)
+        
+            print(self.final_ratings)
+
+
 
     def print_recommendations(self):
         """
@@ -111,7 +126,6 @@ class RecommendationEngine(object):
         print("-"*100)
         print(self.rating_similarity)
         print("-"*100)
-
 
 if '__main__' == __name__:
 

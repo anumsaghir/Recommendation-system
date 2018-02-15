@@ -106,7 +106,7 @@ class RecommendationEngine(object):
             pool_movie_id = r[0].movie_id
             similarity = r[1]
             # self.rating_similarity[pool_movie_id]
-            self.final_ratings[pool_movie_id] = similarity - (self.rating_similarity[pool_movie_id] * self.RATING_SIMILARITY_WEIGHT)
+            self.final_ratings[pool_movie_id] = similarity - (self.rating_similarity.get(pool_movie_id, 2.5) * self.RATING_SIMILARITY_WEIGHT)
         
             print(self.final_ratings)
 

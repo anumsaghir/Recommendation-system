@@ -120,6 +120,9 @@ class RecommendationEngine(object):
         print("Title: {}, Genres: {}".format(self.target_movie.title, self.target_movie.genres))
         print("="*100)
 
+        print(type(self.recommendation_pool))
+        print(self.recommendation_pool)
+
         for rp in self.recommendation_pool:
             print("Movie: %s - Genres: %s - Similarity: %f" % (rp[0].title, rp[0].genres, rp[1]))
 

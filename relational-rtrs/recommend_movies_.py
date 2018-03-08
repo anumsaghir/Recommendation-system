@@ -1,4 +1,5 @@
 import sys
+from collections import OrderedDict
 from models import Movie, Similarity, get_db
 
 
@@ -112,44 +113,25 @@ class RecommendationEngine(object):
             print(self.final_ratings)
 
 
+    def sort_ratings(self):
+        self.final_ratings = OrderedDict(sorted(self.final_ratings.items(), key=lambda kv: kv[1], reverse=True))
 
- # """def print_recommendations(self):
-  #      """
-   #     Print the recommended movies nicely
-    #    """
-
-     #   print("Title: {}, Genres: {}".format(self.target_movie.title, self.target_movie.genres))
-      #  print("="*100)
-
-       # for rp in self.recommendation_pool:
-        #    print("Movie: %s - Genres: %s - Similarity: %f" % (rp[0].title, rp[0].genres, rp[1]))
-
-        #print("-"*100)
-        #print(self.rating_similarity)
-        #print(self.final_ratings)
-        #print("-"*100) 
-
-
-    def print_recommendations(self):
+    def print_recommendations(self, n=10):
         """
-        Print the recommended movies nicely
+        Print the top n recommended movies nicely
         """
         print("Title: {}, Genres: {}".format(self.target_movie.title, self.target_movie.genres))
         print("="*100)
 
-       
-        for k,v in self.final_ratings.items():
+        r_count = 0
+        for k, v in self.final_ratings.items():
             m = self.db.query(Movie).filter_by(movie_id=k).first()
 
             print("Movie: {} - Genres: {} - Similarity: {}".format(m.title, m.genres, v))
+            r_count += 1
+            if r_count > n:
+                break
 
-        # for k,v in self.final_ratings.items():
-            # print(k,"=",v)
-
-        print("-"*100)
-        print(self.rating_similarity)
-        print(self.final_ratings)
-        print("-"*100) 
 
 if '__main__' == __name__:
 
@@ -161,4 +143,5 @@ if '__main__' == __name__:
 
     R = RecommendationEngine()
     R.recommend(movie_id, 10)
-    R.print_recommendations()
+    R.sort_ratings()
+    R.print_recommendations(10)

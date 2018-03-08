@@ -81,7 +81,7 @@ class RecommendationEngine(object):
             tmr=target_movie_average_rating,
             pool_movie_ids=str(pmids)[1:-1]
         )
-        print(query_2)
+       
 
         res = self.db.execute(query_2).fetchall()
         for rec in res:
@@ -110,7 +110,7 @@ class RecommendationEngine(object):
             # self.rating_similarity[pool_movie_id]
             self.final_ratings[pool_movie_id] = similarity - (self.rating_similarity.get(pool_movie_id, 2.5) * self.RATING_SIMILARITY_WEIGHT)
         
-            print(self.final_ratings)
+            
 
 
     def sort_ratings(self):

@@ -121,13 +121,15 @@ class RecommendationEngine(object):
         Print the top n recommended movies nicely
         """
         print("Title: {}, Genres: {}".format(self.target_movie.title, self.target_movie.genres))
-        print("="*100)
+        print("="*120)
 
         r_count = 0
+        print('{} {} {}'.format('Similarity'.ljust(12), 'Movie'.ljust(60), 'Genres'))
+        print('-'*120)
         for k, v in self.final_ratings.items():
             m = self.db.query(Movie).filter_by(movie_id=k).first()
 
-            print("Movie: {} - Genres: {} - Similarity: {}".format(m.title, m.genres, v))
+            print('{} {} {}'.format(str(round(v, 5)).ljust(12), m.title.ljust(60), m.genres))
             r_count += 1
             if r_count > n:
                 break

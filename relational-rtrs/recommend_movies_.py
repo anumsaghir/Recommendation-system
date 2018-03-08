@@ -137,17 +137,9 @@ class RecommendationEngine(object):
         print("Title: {}, Genres: {}".format(self.target_movie.title, self.target_movie.genres))
         print("="*100)
 
-        # print(type(self.final_ratings))
-        # print(self.final_ratings)
-
-        # for rp in self.final_ratings:
+       
         for k,v in self.final_ratings.items():
-            # print("Movie: %s - Genres: %s - Similarity: %f" % (rp[0].title, rp[0].genres, rp[1]))
-            # print(type(rp))
-            # print(rp)
-            # print("Movie: %s - Genres: %s - Similarity: %f" % (rp[0].title, rp[0].genres, 'test'))
             m = self.db.query(Movie).filter_by(movie_id=k).first()
-            # print("Movie: %s - Genres: %s - Similarity: %f").format(k, v, 'test'))
 
             print("Movie: {} - Genres: {} - Similarity: {}".format(m.title, m.genres, v))
 

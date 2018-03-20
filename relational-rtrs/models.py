@@ -21,6 +21,14 @@ class Similarity(Base):
     title_similarity_index = Column(Float)
     genres_similarity_index = Column(Float)
 
+class Tags(Base):
+    __tablename__ = 'Tag_similarities'
+
+    user_id = Column(Integer, primary_key=True)
+    movie_id = Column(Integer, primary_key=True)
+    tags = Column(Unicode(500))
+    timestamp= Column(Integer)
+
 
 def get_db():
     engine = create_engine('mysql+pymysql://anum:pakistan@localhost/movies_db')

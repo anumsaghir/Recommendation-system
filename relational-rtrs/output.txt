@@ -1,0 +1,25 @@
+ - Getting target movie record
+ - Getting movies recommendation pool
+get_tags_similarity
+Target movied tagged by these USER:
+USER_ID    tags
+42890    music
+42890    biographical
+TAGGED IWHCH OTHER MOVIES BY TARGET MOVIE TAGGER
+USER_ID    movie_id
+42890    129415
+Title: Master of the Universe (2013), Genres: Documentary
+========================================================================================================================
+Similarity   Movie                                                        Genres
+------------------------------------------------------------------------------------------------------------------------
+0.78857      History of the Eagles (2013)                                 Documentary
+0.735        Birth of the Living Dead (2013)                              Documentary
+0.68571      All of Me (2013)                                             Documentary
+0.65         Out of the Blue (2002)                                       Documentary
+0.63         Class of 92, The (2013)                                      Documentary
+0.62222      William Kunstler: Disturbing the Universe (2009)             Documentary
+0.62222      Education of Mohammad Hussein, The (2013)                    Documentary
+0.61         Let the Fire Burn (2013)                                     Documentary
+0.6          Out of the Clear Blue Sky (2012)                             Documentary
+0.6          A Story of Children and Film (2013)                          Documentary
+0.6          Last of the Unjust, The (Dernier des injustes, Le) (2013)    Documentary

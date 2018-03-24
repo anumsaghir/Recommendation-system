@@ -22,6 +22,24 @@ class RecommendationEngine(object):
         """
         self.db = get_db()
 
+    
+    def get_tags_count_(self, movie_id):
+
+        query = """
+        select tag, count(tag) from tags where movie_id={movie_id} group by tag
+        """.format(
+            movie_id = movie_id,
+        )
+        res = self.db.execute(query).fetchall()
+
+        tags_occured = dict()
+        for row in res:
+            tags_occured[row[0]] = row[1]
+
+        # print(tags_occured)
+
+        return tags_occured
+
     def get_movie_recommendation_pool(self, pool_size):
         """
         Get a pool of movies that are similar based on Title, genres and tags (ToDo)
@@ -46,32 +64,20 @@ class RecommendationEngine(object):
 
         # recommendation pool list contains elements of form [movie_record, similarity_value]
         self.recommendation_pool = []
+        self.recommendation_pool_tags_count = dict()
 
         for r in res:
             if r[0] != self.target_movie.movie_id:
                 m = self.db.query(Movie).filter_by(movie_id=r[0]).first()
             else:
                 m = self.db.query(Movie).filter_by(movie_id=r[1]).first()
-
+            self.recommendation_pool_tags_count[m.movie_id] = self.get_tags_count_(m.movie_id) 
+            
             self.recommendation_pool.append([m, r[2]])
 
-    
-    def get_tags_count_(self, movie_id):
-
-        query = """
-        select tag, count(tag) from tags where movie_id={movie_id} group by tag
-        """.format(
-            movie_id = movie_id,
-        )
-        res = self.db.execute(query).fetchall()
-
-        tags_occured = dict()
-        for row in res:
-            tags_occured[row[0]] = row[1]
-
-        # print(tags_occured)
-
-        return tags_occured
+        print('self.recommendation_pool_tags_count')
+        print(self.recommendation_pool_tags_count)
+        print('self.recommendation_pool_tags_count')
 
     def get_ratings_similarity(self):
         """

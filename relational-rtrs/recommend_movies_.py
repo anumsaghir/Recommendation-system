@@ -22,11 +22,12 @@ class RecommendationEngine(object):
         """
         self.db = get_db()
 
+
     
     def get_tags_count_(self, movie_id):
 
         query = """
-        select tag, count(tag) from tags where movie_id={movie_id} group by tag
+        select tags, count(tags) from tags where movie_id={movie_id} group by tags
         """.format(
             movie_id = movie_id,
         )
@@ -36,7 +37,7 @@ class RecommendationEngine(object):
         for row in res:
             tags_occured[row[0]] = row[1]
 
-        # print(tags_occured)
+        print(tags_occured)
 
         return tags_occured
 
@@ -174,6 +175,8 @@ class RecommendationEngine(object):
 
         self.get_movie_recommendation_pool(num_recommendations * 10)
         self.get_ratings_similarity()
+        target_movie_tags = self.get_tags_count_(target_movie_id)
+
        
         
         self.final_ratings = {}
@@ -191,6 +194,7 @@ class RecommendationEngine(object):
 
     def sort_ratings(self):
         self.final_ratings = OrderedDict(sorted(self.final_ratings.items(), key=lambda kv: kv[1], reverse=True))
+
 
     def print_recommendations(self, n=10):
         """

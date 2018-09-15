@@ -23,7 +23,7 @@ class RecommendationEngine(object):
         self.db = get_db()
 
 
-    
+
     def get_tags_count_(self, movie_id):
 
         query = """
@@ -49,7 +49,7 @@ class RecommendationEngine(object):
         print(" - Getting movies recommendation pool")
 
         query = """
-        SELECT movie_id_1, movie_id_2, 
+        SELECT movie_id_1, movie_id_2,
             ((title_similarity_index * {tw}) + (genres_similarity_index * {gw})) as similarity
         FROM similarities
         WHERE movie_id_1={movie_id} OR movie_id_2={movie_id}
@@ -72,8 +72,8 @@ class RecommendationEngine(object):
                 m = self.db.query(Movie).filter_by(movie_id=r[0]).first()
             else:
                 m = self.db.query(Movie).filter_by(movie_id=r[1]).first()
-            self.recommendation_pool_tags_count[m.movie_id] = self.get_tags_count_(m.movie_id) 
-            
+            self.recommendation_pool_tags_count[m.movie_id] = self.get_tags_count_(m.movie_id)
+
             self.recommendation_pool.append([m, r[2]])
 
         print('self.recommendation_pool_tags_count')
@@ -106,68 +106,68 @@ class RecommendationEngine(object):
             tmr=target_movie_average_rating,
             pool_movie_ids=str(pmids)[1:-1]
         )
-       
+
 
         res = self.db.execute(query_2).fetchall()
         for rec in res:
             self.rating_similarity[rec[0]] = rec[1]
 
-    
-#  def get_tags_similarity(self):
-   #      """
-       # Get tags similarity between movies in the movie recommendation pool and the
-        #target movie.
-        #"""
 
-        # Get tags of the target movie
-        #query_3 = """
-        #SELECT * FROM tags 
-        #WHERE user_id IN (select user_id from tags where movie_id={movie_id})
-        #""".format(
-         #   movie_id = self.target_movie.movie_id,
-        #);
-        #res = self.db.execute(query_3).fetchall()
-        
+    def get_tags_similarity(self):
+        """
+        Get tags similarity between movies in the movie recommendation pool and the
+        target movie.
+        """
 
-        #"""Target movie all tags"""
-        #"""Tagret movie tagger -> tagged which other movies"""
+        #Get tags of the target movie
+        query_3 = """
+        SELECT * FROM tags
+        WHERE user_id IN (select user_id from tags where movie_id={movie_id})
+        """.format(
+            movie_id = self.target_movie.movie_id,
+        );
+        res = self.db.execute(query_3).fetchall()
 
-        #if res:
-         #   print("Target movied tagged by these USER:")
-            #print("USER_ID    tags")
-          #  users =  []
-           # for row in res:
-            #    print(row)
-             #   print("{}    {}".format(row[0], row[2]))
-              #  users.append(row[0])
 
-           # print("TAGGED WHICH OTHER MOVIES BY TARGET MOVIE TAGGER")        
-            #print("USER_ID    movie_id")
-            
-            #self.tags_similarity = {}
-            #for user in users: 
-             #   query4 = """SELECT * from tags
-              #  WHERE user_id = {user_id} AND 
-               # movie_id NOT IN ({movie_id})
+        """Target movie all tags"""
+        """Tagret movie tagger -> tagged which other movies"""
 
-                #""".format(
-                 #   user_id = user,
-                  #  movie_id = self.target_movie.movie_id,
-                #)
-                #res1 = self.db.execute(query4).fetchall()
-                #if res1:
-                 #   for row1 in res1:
+        if res:
+            print("Target movied tagged by these USER:")
+            print("USER_ID    tags")
+            users =  []
+            for row in res:
+                print(row)
+                print("{}    {}".format(row[0], row[2]))
+                users.append(row[0])
 
-                      #  self.tags_similarity[row[0]] = row[1]
-                        #print("{}    {}".format(row1[0], row1[1]))
-                       
+            print("TAGGED WHICH OTHER MOVIES BY TARGET MOVIE TAGGER")
+            print("USER_ID    movie_id")
+
+            self.tags_similarity = {}
+            for user in users:
+                query4 = """SELECT * from tags
+                WHERE user_id = {user_id} AND
+                movie_id NOT IN ({movie_id})
+
+                """.format(
+                    user_id = user,
+                    movie_id = self.target_movie.movie_id,
+                )
+                res1 = self.db.execute(query4).fetchall()
+                if res1:
+                    for row1 in res1:
+
+                        self.tags_similarity[row[0]] = row[1]
+                        print("{}    {}".format(row1[0], row1[1]))
+
 
 
     def recommend(self, target_movie_id, num_recommendations):
         """
         Recommend movies that are similar to target_movie_id.
         """
-        
+
 
         print(" - Getting target movie record")
         self.target_movie = self.db.query(Movie).filter_by(movie_id=target_movie_id).first()
@@ -177,19 +177,19 @@ class RecommendationEngine(object):
         self.get_ratings_similarity()
         target_movie_tags = self.get_tags_count_(target_movie_id)
 
-       
-        
+
+
         self.final_ratings = {}
         for r in self.recommendation_pool:
             # r[0] is the movie object, so r[0].movie_id gives you the movie ID
             # r[1] contains the rating similarity value
             pool_movie_id = r[0].movie_id
-            similarity = r[1] 
+            similarity = r[1]
 
             # self.rating_similarity[pool_movie_id]
             self.final_ratings[pool_movie_id] = similarity - (self.rating_similarity.get(pool_movie_id, 2.5) * self.RATING_SIMILARITY_WEIGHT)
-        
-            
+
+
 
 
     def sort_ratings(self):
@@ -230,7 +230,8 @@ if '__main__' == __name__:
     print("tags_count")
     for tag, count in tags_count.items():
         print(tag+'    '+str(count))
-    
+
     R.recommend(movie_id, 10)
     R.sort_ratings()
     R.print_recommendations(10)
+    R.get_tags_similarity()

@@ -19,6 +19,8 @@ running
 sudo mysql_secure_installation
 ```
 
+Update the configuration file(s) for mysql so they are optimized.
+
 Make sure mysql is running
 
 ```bash
@@ -52,7 +54,7 @@ Now create tables in the DB by executing the db_setup.sql file against the datab
 ```bash
 mysql movies_db -u anum -ppakistan < db_setup.sql
 ```
-## For Dataset: 
+## For Dataset:
 
 you can download the dataset from the link below:
 http://files.grouplens.org/datasets/movielens/ml-20m.zip
@@ -98,7 +100,7 @@ LOAD DATA LOCAL INFILE '/home/hduser1/Downloads/ml-20m/links.csv' INTO TABLE lin
 ## Create & Activate a virtual Enviroment:
 ```bash
 source py35env/bin/activate
-``` 
+```
 because our project is independent from operating system python version.
 
 ## Python to mysql Connectivity:
@@ -136,7 +138,7 @@ recs = engine.execute("select * from movies limit 10")
 print(recs)
 ```
 The results are shown in list of lists
-"list containing records and each record is a list". 
+"list containing records and each record is a list".
 
 for better solution, we can made class for table.
 ```bash
@@ -175,18 +177,3 @@ def jaccard_index(s1, s2):
     union_cardinality = len(set.union(set1, set2))
 
     return intersection_cardinality/float(union_cardinality)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -13,8 +13,17 @@ class Movie(Base):
     genres = Column(Unicode(500))
 
 
-class Tags(Base):
-    __tablename__ = 'Tag_similarities'
+class Rating(Base):
+    __tablename__ = 'ratings'
+
+    user_id = Column(Integer, primary_key=True)
+    movie_id = Column(Integer, primary_key=True)
+    rating = Column(Float)
+    timestamp = Column(Integer)
+
+
+class Tag(Base):
+    __tablename__ = 'tags'
 
     user_id = Column(Integer, primary_key=True)
     movie_id = Column(Integer, primary_key=True)

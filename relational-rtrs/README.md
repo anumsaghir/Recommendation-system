@@ -49,12 +49,22 @@ mysql movies_db -u anum -ppakistan
 
 Then press Ctrl+D again to exit
 
+### Loading from an existing database dump
+
+If you have a SQL dump file, you can load data from it using a command like:
+
+```bash
+bzcat db_dump.sql.bz2 | mysql -u anum -ppakistan movies_db
+```
+
+
+### Creating tables and loading data from CSV file
 Now create tables in the DB by executing the db_setup.sql file against the database.
 
 ```bash
 mysql movies_db -u anum -ppakistan < db_setup.sql
 ```
-## For Dataset:
+#### For Dataset:
 
 you can download the dataset from the link below:
 http://files.grouplens.org/datasets/movielens/ml-20m.zip
@@ -66,35 +76,46 @@ After download the dataset, you need to import data from CSV to Sql:
 
 Now to import data:
 
-## TABLE movies
+#### TABLE movies
 
 ```bash
 LOAD DATA LOCAL INFILE '/home/hduser1/Downloads/ml-20m/movies.csv' INTO TABLE movies FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\r\n' IGNORE 1 ROWS;
 ```
-## TABLE tags
+#### TABLE tags
 
 ```bash
 LOAD DATA LOCAL INFILE '/home/hduser1/Downloads/ml-20m/tags.csv' INTO TABLE tags FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\r\n' IGNORE 1 ROWS;
 ```
-## TABLE ratings
+#### TABLE ratings
 
 ```bash
 LOAD DATA LOCAL INFILE '/home/hduser1/Downloads/ml-20m/rating.csv' INTO TABLE ratings FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\r\n' IGNORE 1 ROWS;
 ```
-## TABLE genome_scores
+#### TABLE genome_scores
 
 ```bash
 LOAD DATA LOCAL INFILE '/home/hduser1/Downloads/ml-20m/genome-scores.csv' INTO TABLE genome-scores FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\r\n' IGNORE 1 ROWS;
 ```
-## TABLE genome_tags
+#### TABLE genome_tags
 
 ```bash
 LOAD DATA LOCAL INFILE '/home/hduser1/Downloads/ml-20m/genome-tags.csv' INTO TABLE genome_tags FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\r\n' IGNORE 1 ROWS;
 ```
-## TABLE links
+#### TABLE links
 
 ```bash
 LOAD DATA LOCAL INFILE '/home/hduser1/Downloads/ml-20m/links.csv' INTO TABLE links FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\r\n' IGNORE 1 ROWS;
+```
+
+### Creating indexes
+
+For faster lookups, we index most used fields.
+
+```sql
+CREATE INDEX movie_titles ON movies(title);
+CREATE INDEX movie_genres ON movies(genres);
+CREATE INDEX ratings_rating ON ratings(rating);
+CREATE INDEX tags_tags ON tags(tags);
 ```
 
 ## Create & Activate a virtual Enviroment:

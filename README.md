@@ -34,7 +34,6 @@ number of entries/records for each are:
 | Item      | Record count |
 |-----------|-------------:|
 | Movies    | 58098        |
-| Ratings   | 27753444     |
 | Tags      | 324370       |
 
 
@@ -43,7 +42,20 @@ number of entries/records for each are:
 Same recommendation methodology is used for all 3 approaches to ensure that
 there is no bias within the implementations.
 
-* Select movies based on similarity between movie title and genres and score the title and genre similarity.
-* Add similarity score from movie ratings. Ratings given by users that have rated target movie have more weight.
-* For target movie find all users that have given tags for the movie and then find all movies that the same users have tagged. Then calculate the tags similarity value.
-* Top n movies with the highest combined simillarity index are recommended.
+1. Split movie title into words.
+  a. Ignore the year present at the end of movie title.
+  b. Ignore any common words in movie title (in, at, of, the, and, etc).
+  c. Fetch all movies where title contains any of the remaining title words.
+     This makes up the recommendation pool used for further processing.
+  d. Calculate title similarity between the movies.
+
+2. Split genres into words and find all movies in the recommendation pool that
+   have at least one genre match with the target movie.
+   a. Calculate genre similarity among the results and add to overall movie
+      similarity score.
+
+3. For target movie find all users that have given tags for the movie and then
+   find all movies within the recommendation pool that the same users have
+   tagged. Then calculate the tags similarity value.
+
+4. Top n movies with the highest combined similarity index are recommended.

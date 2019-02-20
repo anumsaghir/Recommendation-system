@@ -1,0 +1,1430 @@
+Total movies: 58098
+randomly selected record positions: [72, 50350, 9438, 3186, 23015, 54457, 45729, 50168, 28235, 18394, 37345, 52885, 48796, 4039, 6242, 16217, 17079, 51140, 46123, 12035]
+Target movies selected for recommendation
+73 MisÃ©rables, Les (1995) Drama|War
+176147 Mars (2004) Comedy
+27685 Bring It On Again (2004) Comedy
+3272 Bad Lieutenant (1992) Crime|Drama
+108694 Yu-Gi-Oh!: Bonds Beyond Time (Gekijouban Yuugiou: Chouyuugou! Jikuu o koeta kizuna) (2010) Animation|Fantasy
+185213 Cirque du Soleil: AlegrÃ­a (2001) Children|Documentary
+166219 Aschenputtel (1989) (no genres listed)
+175775 Baasha (1995) Action
+124458 Hansel and Gretel (1982) Children
+91323 Sitter, The (2011) Comedy
+146698 Bruce Lee, My Brother (2010) Drama
+181837 They're Off (1948) Animation
+172781 Ð Ð¿Ð¾ÑƒÑ‚Ñ€Ñƒ Ð¾Ð½Ð¸ Ð¿Ñ€Ð¾ÑÐ½ÑƒÐ»Ð¸ÑÑŒ (2003) Comedy|Drama
+4132 Mannequin (1987) Comedy|Romance
+6340 Only the Strong Survive - A Celebration of Soul (2002) Documentary|Musical
+81633 Dark and Stormy Night (2009) Comedy|Mystery
+86057 Outrageous Class (Hababam sinifi) (1975) Comedy|Drama
+177853 The Journey Is the Destination (2016) Drama
+167082 Kiss Me, Kill Me (2015) Drama|Thriller
+54274 I Know Who Killed Me (2007) Crime|Drama|Thriller
+
+
+
+:> Trying to find recommendations for: 73 - MisÃ©rables, Les (1995)
+73 - MisÃ©rables, Les (1995) - Drama|War
+['MisÃ©rables', 'Les']
+1094 records from partial title match
+['Drama', 'War']
+24651 records from partial genres match
+target movie average rating: 3.794383003492433
+GTS: target_movie_tags: {'adapted from:book': 1, 'based on a book': 1, 'boxer': 1, 'Claude Lelouch': 1, 'foreign language': 1, 'Jewish': 1, 'opera': 1, 'World War II': 1}
+GTS: 8 users have tagged this movie
+GTS: Same users have tagged 765 movies from top 1000 movies in the recommendation pool
+
+1873 - MisÃ©rables, Les (1998) - Crime|Drama|Romance|War
+  Title Similarity: 0.5 - (MisÃ©rables, Les (1998))
+  Genres Similarity: 0.15 - (Crime|Drama|Romance|War)
+  Ratings Similarity: 0.29535487693331114
+  Tags Similarity: 0.17094017094017094 - ({'19th century': 1, 'adapted from:book': 3, 'author:Victor Hugo': 1, 'based on a book': 5, 'Bibliothek': 1, 'Bille August': 1, 'changed the book TOO much': 1, 'classic': 1, 'France': 1, 'library vhs': 1, 'musical/book better': 1, 'Uma Thurman': 1})
+ -> Final Similarity: 1.116295047873482
+
+72117 - MisÃ©rables, Les (1935) - Drama|Romance
+  Title Similarity: 0.5 - (MisÃ©rables, Les (1935))
+  Genres Similarity: 0.09999999999999999 - (Drama|Romance)
+  Ratings Similarity: 0.28755441109480184
+  Tags Similarity: 0.19047619047619047 - ({'03/10': 1, 'adapted from:book': 1, 'based on a book': 1, 'based on novel or book': 1, 'BD-R': 1, 'Richard Boleslawski': 1})
+ -> Final Similarity: 1.0780306015709922
+
+99532 - MisÃ©rables, Les (2000) - Drama|Romance
+  Title Similarity: 0.5 - (MisÃ©rables, Les (2000))
+  Genres Similarity: 0.09999999999999999 - (Drama|Romance)
+  Ratings Similarity: 0.28340844836188256
+  Tags Similarity: 0.1212121212121212 - ({'based on a book': 2, 'JosÃ©e Dayan': 1})
+ -> Final Similarity: 1.0046205695740038
+
+105509 - MisÃ©rables, Les (1978) - Drama
+  Title Similarity: 0.5 - (MisÃ©rables, Les (1978))
+  Genres Similarity: 0.15 - (Drama)
+  Ratings Similarity: 0.269212019790454
+  Tags Similarity: 0.06060606060606061 - ({'18th century': 1, '19th century': 1, 'adapted from:book': 1, 'Glenn Jordan': 1})
+ -> Final Similarity: 0.9798180803965146
+
+89349 - MisÃ©rables, Les (1934) - Drama
+  Title Similarity: 0.5 - (MisÃ©rables, Les (1934))
+  Genres Similarity: 0.15 - (Drama)
+  Ratings Similarity: 0.2915677890212232
+  Tags Similarity: 0.0 - ({'BD-R': 1, 'cosette': 1, 'Criterion': 1})
+ -> Final Similarity: 0.9415677890212233
+
+99560 - MisÃ©rables, Les (1958) - Drama
+  Title Similarity: 0.5 - (MisÃ©rables, Les (1958))
+  Genres Similarity: 0.15 - (Drama)
+  Ratings Similarity: 0.282337019790454
+  Tags Similarity: 0.0 - ({'false identity': 1, 'Jean-Paul Le Chanois': 1, 'Technirama': 1})
+ -> Final Similarity: 0.932337019790454
+
+99562 - MisÃ©rables, Les (1952) - Drama|Romance
+  Title Similarity: 0.5 - (MisÃ©rables, Les (1952))
+  Genres Similarity: 0.09999999999999999 - (Drama|Romance)
+  Ratings Similarity: 0.262337019790454
+  Tags Similarity: 0.0 - ({'BD-R': 1, 'Lewis Milestone': 1})
+ -> Final Similarity: 0.862337019790454
+
+99149 - MisÃ©rables, Les (2012) - Drama|Musical|Romance|IMAX
+  Title Similarity: 0.5 - (MisÃ©rables, Les (2012))
+  Genres Similarity: 0.06 - (Drama|Musical|Romance|IMAX)
+  Ratings Similarity: 0.28413425481349547
+  Tags Similarity: 0.004442798963346909 - ({'"singing by non-singers" in The NYer 24/31 Dec 2012': 1, '1800s': 4, '19th century': 8, 'Aaron Tveit': 1, 'adapted from:book': 2, 'Amanda Seyfried': 2, 'Anne Hathaway': 14, 'blu-ray': 1, 'boring': 1, 'Cast': 1, 'character driven': 1, 'cinematography': 2, 'depressing': 1, 'from novel': 1, 'great soundtrack': 3, 'historical': 1, 'Hugh Jackman': 2, 'IMAX Digital only': 1, 'MASSA_MUSICAL': 1, 'musical': 6, 'Oscar Nominee: Best Picture': 2, 'revolution': 1, "Russell Crowe's singing": 1, 'silvia': 1, 'singing': 1, 'strained': 1, 'Thumping Soundtrack': 1, 'Tom Hooper': 1, 'toplist12': 1, 'Victor Hugo': 1})
+ -> Final Similarity: 0.8485770537768424
+
+145638 - Les MisÃ©rables (1948) - (no genres listed)
+  Title Similarity: 0.5 - (Les MisÃ©rables (1948))
+  Ratings Similarity: 0.25233701979045403
+  Tags Similarity: 0.0 - ({'falsely accused': 1})
+ -> Final Similarity: 0.752337019790454
+
+106751 - MisÃ©rables in Concert, Les (1996) - Drama|Musical
+  Title Similarity: 0.3333333333333333 - (MisÃ©rables in Concert, Les (1996))
+  Genres Similarity: 0.09999999999999999 - (Drama|Musical)
+  Ratings Similarity: 0.2939420499769878
+  Tags Similarity: 0.0 - ({'concert': 1, 'musical': 1})
+ -> Final Similarity: 0.7272753833103212
+recommendation took 123.94 seconds
+
+:> Trying to find recommendations for: 176147 - Mars (2004)
+176147 - Mars (2004) - Comedy
+['Mars']
+75 records from partial title match
+['Comedy']
+15955 records from partial genres match
+target movie average rating: 3.5
+GTS: target_movie_tags: {'woman director': 1}
+GTS: 1 users have tagged this movie
+GTS: Same users have tagged 869 movies from top 1000 movies in the recommendation pool
+
+1553 - Late Bloomers (1996) - Comedy
+  Genres Similarity: 0.3 - (Comedy)
+  Ratings Similarity: 0.28135135135135136
+  Tags Similarity: 4.0 - ({'woman director': 1})
+ -> Final Similarity: 4.581351351351351
+
+2244 - Allnighter, The (1987) - Comedy|Romance
+  Genres Similarity: 0.15 - (Comedy|Romance)
+  Ratings Similarity: 0.21545454545454545
+  Tags Similarity: 4.0 - ({'woman director': 1})
+ -> Final Similarity: 4.365454545454546
+
+2679 - Finding North (1998) - Comedy|Drama|Romance
+  Genres Similarity: 0.09999999999999999 - (Comedy|Drama|Romance)
+  Ratings Similarity: 0.25278688524590165
+  Tags Similarity: 4.0 - ({'woman director': 1})
+ -> Final Similarity: 4.3527868852459015
+
+1558 - Sudden Manhattan (1997) - Comedy
+  Genres Similarity: 0.3 - (Comedy)
+  Ratings Similarity: 0.24500000000000002
+  Tags Similarity: 1.3333333333333333 - ({'Adrienne Shelly': 1, 'woman director': 1})
+ -> Final Similarity: 1.8783333333333334
+
+2172 - Strike! (a.k.a. All I Wanna Do, The Hairy Bird) (1998) - Comedy|Drama
+  Genres Similarity: 0.15 - (Comedy|Drama)
+  Ratings Similarity: 0.2904761904761905
+  Tags Similarity: 1.3333333333333333 - ({'Kirsten Dunst': 1, 'woman director': 1})
+ -> Final Similarity: 1.7738095238095237
+
+2499 - God Said 'Ha!' (1998) - Comedy
+  Genres Similarity: 0.3 - (Comedy)
+  Ratings Similarity: 0.2977556109725686
+  Tags Similarity: 0.6666666666666666 - ({'bizarre': 1, 'cancer': 1, 'woman director': 1})
+ -> Final Similarity: 1.264422277639235
+
+1585 - Love Serenade (1996) - Comedy
+  Genres Similarity: 0.3 - (Comedy)
+  Ratings Similarity: 0.2894036697247706
+  Tags Similarity: 0.6666666666666666 - ({'funny': 1, 'nudity (topless)': 1, 'woman director': 1})
+ -> Final Similarity: 1.2560703363914372
+
+2239 - Swept Away (Travolti da un insolito destino nell'azzurro mare d'Agosto) (1975) - Comedy|Drama
+  Genres Similarity: 0.15 - (Comedy|Drama)
+  Ratings Similarity: 0.28939477303989
+  Tags Similarity: 0.6666666666666666 - ({'Lina WertmÃ¼ller': 1, 'Romnce': 1, 'woman director': 1})
+ -> Final Similarity: 1.1060614397065567
+
+205 - Unstrung Heroes (1995) - Comedy|Drama
+  Genres Similarity: 0.15 - (Comedy|Drama)
+  Ratings Similarity: 0.2996739130434783
+  Tags Similarity: 0.4 - ({'Diane Keaton': 1, 'John Turturro': 1, 'Pam possible': 1, 'woman director': 1})
+ -> Final Similarity: 0.8496739130434783
+
+109864 - Veronica Mars (2014) - Comedy|Crime|Drama
+  Title Similarity: 0.25 - (Veronica Mars (2014))
+  Genres Similarity: 0.09999999999999999 - (Comedy|Crime|Drama)
+  Ratings Similarity: 0.28583535108958835
+  Tags Similarity: 0.0 - ({'adapted from:TV series': 1, 'based on a TV show': 4, 'based on tv series': 1, 'cast': 1, 'crowdfunded': 1, 'drama': 1, 'dystopia': 1, 'Rob Thomas': 1})
+ -> Final Similarity: 0.6358353510895883
+recommendation took 58.21 seconds
+
+:> Trying to find recommendations for: 27685 - Bring It On Again (2004)
+27685 - Bring It On Again (2004) - Comedy
+['Bring', 'It', 'On', 'Again']
+12872 records from partial title match
+['Comedy']
+15955 records from partial genres match
+target movie average rating: 2.1467741935483873
+GTS: target_movie_tags: {'adversary': 1, 'Anne Judson-Yager': 1, 'cheerleading': 2}
+GTS: 4 users have tagged this movie
+GTS: Same users have tagged 892 movies from top 1000 movies in the recommendation pool
+
+3882 - Bring It On (2000) - Comedy
+  Title Similarity: 0.5 - (Bring It On (2000))
+  Genres Similarity: 0.3 - (Comedy)
+  Ratings Similarity: 0.2464642993648915
+  Tags Similarity: 0.08812729498164015 - ({'90s': 1, 'cheering crowd': 1, 'cheerleading': 16, 'competition:cheerleading': 1, 'Eliza Dushku': 2, 'Eyecandy': 1, 'girlie movie': 1, 'Great soundtrack': 1, 'guilty pleasure': 5, 'high school': 3, 'inspiring sports movie': 1, 'Kate': 1, 'kitsch': 1, 'Overrated': 1, 'Peyton Reed': 1, 'slash': 1, 'teenagers': 1})
+ -> Final Similarity: 1.1345915943465317
+
+53808 - Bring It On: All or Nothing (2006) - Comedy
+  Title Similarity: 0.3333333333333333 - (Bring It On: All or Nothing (2006))
+  Genres Similarity: 0.3 - (Comedy)
+  Ratings Similarity: 0.2628064516129033
+ -> Final Similarity: 0.8961397849462366
+
+118512 - Bring It On: In It To Win It (2007) - Comedy
+  Title Similarity: 0.3333333333333333 - (Bring It On: In It To Win It (2007))
+  Genres Similarity: 0.3 - (Comedy)
+  Ratings Similarity: 0.2593064516129032
+ -> Final Similarity: 0.8926397849462365
+
+131986 - Getting It On (1983) - Comedy
+  Title Similarity: 0.2857142857142857 - (Getting It On (1983))
+  Genres Similarity: 0.3 - (Comedy)
+  Ratings Similarity: 0.2788064516129032
+ -> Final Similarity: 0.8645207373271888
+
+109416 - Bring It On: Fight to the Finish (2009) - Comedy
+  Title Similarity: 0.3 - (Bring It On: Fight to the Finish (2009))
+  Genres Similarity: 0.3 - (Comedy)
+  Ratings Similarity: 0.2572439516129032
+ -> Final Similarity: 0.8572439516129031
+
+152366 - Carry On Again Doctor (1969) - Comedy
+  Title Similarity: 0.25 - (Carry On Again Doctor (1969))
+  Genres Similarity: 0.3 - (Comedy)
+  Ratings Similarity: 0.2961935483870968
+ -> Final Similarity: 0.8461935483870968
+
+7274 - Let's Do It Again (1975) - Comedy
+  Title Similarity: 0.25 - (Let's Do It Again (1975))
+  Genres Similarity: 0.3 - (Comedy)
+  Ratings Similarity: 0.23967601683029455
+ -> Final Similarity: 0.7896760168302945
+
+177337 - Bring It On: Worldwide #Cheersmack (2017) - Comedy|Romance
+  Title Similarity: 0.375 - (Bring It On: Worldwide #Cheersmack (2017))
+  Genres Similarity: 0.15 - (Comedy|Romance)
+  Ratings Similarity: 0.2600564516129032
+ -> Final Similarity: 0.7850564516129033
+
+108271 - Whitecoats (2004) - Comedy
+  Title Similarity: 0.16666666666666666 - (Whitecoats (2004))
+  Genres Similarity: 0.3 - (Comedy)
+  Ratings Similarity: 0.29880645161290326
+ -> Final Similarity: 0.76547311827957
+
+96819 - Everyone (2004) - Comedy
+  Title Similarity: 0.16666666666666666 - (Everyone (2004))
+  Genres Similarity: 0.3 - (Comedy)
+  Ratings Similarity: 0.2788064516129032
+ -> Final Similarity: 0.7454731182795699
+recommendation took 71.45 seconds
+
+:> Trying to find recommendations for: 3272 - Bad Lieutenant (1992)
+3272 - Bad Lieutenant (1992) - Crime|Drama
+['Bad', 'Lieutenant']
+242 records from partial title match
+['Crime', 'Drama']
+26369 records from partial genres match
+target movie average rating: 3.3171565276828434
+GTS: target_movie_tags: {'baseball': 1, 'blasphemic': 1, 'Catholicism': 2, 'confrontational': 1, 'Dark': 1, 'depressing': 1, 'drugs': 3, 'DVD-Video': 1, 'forgiveness': 1, 'Harvey Keitel': 4, 'heroin': 1, 'KAF': 1, 'nihilism': 1, 'pointless': 1, 'rape': 1}
+GTS: 21 users have tagged this movie
+GTS: Same users have tagged 845 movies from top 1000 movies in the recommendation pool
+
+72405 - Bad Lieutenant: Port of Call New Orleans (2009) - Crime|Drama
+  Title Similarity: 0.2222222222222222 - (Bad Lieutenant: Port of Call New Orleans (2009))
+  Genres Similarity: 0.3 - (Crime|Drama)
+  Ratings Similarity: 0.29660116199589887
+  Tags Similarity: 0.0 - ({'addiction': 2, 'Bob*ola': 1, 'cage': 1, 'corruption': 1, 'dark comedy': 8, 'iguana': 1, 'illegal drugs': 1, 'Netflix Finland': 1, 'New Orleans': 1, 'Nicolas Cage': 1, 'surreal': 1, 'Werner Herzog': 2})
+ -> Final Similarity: 0.818823384218121
+
+185977 - Bad Samaritan (2018) - Crime|Drama
+  Title Similarity: 0.2 - (Bad Samaritan (2018))
+  Genres Similarity: 0.3 - (Crime|Drama)
+  Ratings Similarity: 0.2869706083390294
+  Tags Similarity: 0.0 - ({'663': 1, 'burglars': 1, 'captive': 1, 'serial killer': 1})
+ -> Final Similarity: 0.7869706083390293
+
+66059 - Bad Luck Love (2000) - Crime|Drama
+  Title Similarity: 0.16666666666666666 - (Bad Luck Love (2000))
+  Genres Similarity: 0.3 - (Crime|Drama)
+  Ratings Similarity: 0.2852563226247437
+ -> Final Similarity: 0.7519229892914103
+
+177613 - Bad Channels (1992) - Sci-Fi|Thriller
+  Title Similarity: 0.5 - (Bad Channels (1992))
+  Ratings Similarity: 0.25097060833902934
+ -> Final Similarity: 0.7509706083390293
+
+54580 - Young Lieutenant, The (Le petit lieutenant) (2005) - Crime|Drama
+  Title Similarity: 0.1111111111111111 - (Young Lieutenant, The (Le petit lieutenant) (2005))
+  Genres Similarity: 0.3 - (Crime|Drama)
+  Ratings Similarity: 0.29222060833902935
+  Tags Similarity: 0.0 - ({'homicide': 1})
+ -> Final Similarity: 0.7033317194501405
+
+26462 - Bad Boys (1983) - Crime|Drama|Thriller
+  Title Similarity: 0.2 - (Bad Boys (1983))
+  Genres Similarity: 0.19999999999999998 - (Crime|Drama|Thriller)
+  Ratings Similarity: 0.2927793916609706
+  Tags Similarity: 0.0 - ({'1980s': 1, 'Betamax': 1, 'easily confused with other movie(s) (title)': 2, 'irish-american': 1, 'Rick Rosenthal': 1, 'Sean Penn': 2, 'subjective strong': 1})
+ -> Final Similarity: 0.6927793916609706
+
+384 - Bad Company (1995) - Action|Crime|Drama
+  Title Similarity: 0.2 - (Bad Company (1995))
+  Genres Similarity: 0.19999999999999998 - (Action|Crime|Drama)
+  Ratings Similarity: 0.2798525959166691
+  Tags Similarity: 0.0 - ({'action': 1, 'blackmail': 1, 'entirely dialogue': 1})
+ -> Final Similarity: 0.6798525959166691
+
+98532 - Bad Ass (2012) - Action|Crime|Drama
+  Title Similarity: 0.2 - (Bad Ass (2012))
+  Genres Similarity: 0.19999999999999998 - (Action|Crime|Drama)
+  Ratings Similarity: 0.26654753141595244
+  Tags Similarity: 0.0 - ({'based on true events': 1, 'Craig Moss': 1, 'Danny Trejo': 2, 'Epic Beard Man': 1, 'everyman protagonist': 1})
+ -> Final Similarity: 0.6665475314159525
+
+139805 - Bad Turn Worse (2014) - Crime|Drama|Thriller
+  Title Similarity: 0.16666666666666666 - (Bad Turn Worse (2014))
+  Genres Similarity: 0.19999999999999998 - (Crime|Drama|Thriller)
+  Ratings Similarity: 0.28284560833902933
+  Tags Similarity: 0.0 - ({'empty safe': 1})
+ -> Final Similarity: 0.649512275005696
+
+89833 - Bad Girl (1931) - Drama
+  Title Similarity: 0.2 - (Bad Girl (1931))
+  Genres Similarity: 0.15 - (Drama)
+  Ratings Similarity: 0.28097060833902937
+  Tags Similarity: 0.0 - ({'might like': 1, 'misunderstanding': 1})
+ -> Final Similarity: 0.6309706083390294
+recommendation took 56.35 seconds
+
+:> Trying to find recommendations for: 108694 - Yu-Gi-Oh!: Bonds Beyond Time (Gekijouban Yuugiou: Chouyuugou! Jikuu o koeta kizuna) (2010)
+108694 - Yu-Gi-Oh!: Bonds Beyond Time (Gekijouban Yuugiou: Chouyuugou! Jikuu o koeta kizuna) (2010) - Animation|Fantasy
+['Yu-Gi-Oh!', 'Bonds', 'Beyond', 'Time', 'Gekijouban', 'Yuugiou', 'Chouyuugou!', 'Jikuu', 'o', 'koeta', 'kizuna']
+37433 records from partial title match
+['Animation', 'Fantasy']
+4809 records from partial genres match
+target movie average rating: 2.3
+GTS: target_movie_tags: {}
+GTS: 0 users have tagged this movie
+
+8148 - Twice Upon a Time (1983) - Animation|Fantasy
+  Title Similarity: 0.0625 - (Twice Upon a Time (1983))
+  Genres Similarity: 0.3 - (Animation|Fantasy)
+  Ratings Similarity: 0.2494285714285714
+ -> Final Similarity: 0.6119285714285714
+
+109731 - Legend of the Boneknapper Dragon (2010) - Animation|Fantasy
+  Title Similarity: 0.058823529411764705 - (Legend of the Boneknapper Dragon (2010))
+  Genres Similarity: 0.3 - (Animation|Fantasy)
+  Ratings Similarity: 0.2527058823529411
+ -> Final Similarity: 0.6115294117647059
+
+185879 - Time Out (1985) - Animation|Fantasy
+  Title Similarity: 0.07142857142857142 - (Time Out (1985))
+  Genres Similarity: 0.3 - (Animation|Fantasy)
+  Ratings Similarity: 0.22799999999999998
+ -> Final Similarity: 0.5994285714285714
+
+114585 - Captive, The (PrisonniÃ¨re, La) (1988) - Animation|Fantasy
+  Title Similarity: 0.0 - (Captive, The (PrisonniÃ¨re, La) (1988))
+  Genres Similarity: 0.3 - (Animation|Fantasy)
+  Ratings Similarity: 0.2955
+ -> Final Similarity: 0.5954999999999999
+
+178683 - Danny Boy (2010) - Animation|Fantasy
+  Title Similarity: 0.07142857142857142 - (Danny Boy (2010))
+  Genres Similarity: 0.3 - (Animation|Fantasy)
+  Ratings Similarity: 0.22199999999999998
+ -> Final Similarity: 0.5934285714285714
+
+124332 - Snow Queen (2012) - Animation|Fantasy
+  Title Similarity: 0.0 - (Snow Queen (2012))
+  Genres Similarity: 0.3 - (Animation|Fantasy)
+  Ratings Similarity: 0.2907272727272727
+ -> Final Similarity: 0.5907272727272728
+
+114583 - How Wang-Fo Was Saved (Comment Wang-Fo fut sauvÃ©) (1987) - Animation|Fantasy
+  Title Similarity: 0.0 - (How Wang-Fo Was Saved (Comment Wang-Fo fut sauvÃ©) (1987))
+  Genres Similarity: 0.3 - (Animation|Fantasy)
+  Ratings Similarity: 0.288
+ -> Final Similarity: 0.588
+
+157773 - the Weathering Continent (1992) - Animation|Fantasy
+  Title Similarity: 0.0 - (the Weathering Continent (1992))
+  Genres Similarity: 0.3 - (Animation|Fantasy)
+  Ratings Similarity: 0.288
+ -> Final Similarity: 0.588
+
+182643 - The Cat Piano (2009) - Animation|Fantasy
+  Title Similarity: 0.0 - (The Cat Piano (2009))
+  Genres Similarity: 0.3 - (Animation|Fantasy)
+  Ratings Similarity: 0.288
+ -> Final Similarity: 0.588
+
+182845 - The Tale of the White Serpent (1958) - Animation|Fantasy
+  Title Similarity: 0.0 - (The Tale of the White Serpent (1958))
+  Genres Similarity: 0.3 - (Animation|Fantasy)
+  Ratings Similarity: 0.288
+ -> Final Similarity: 0.588
+recommendation took 38.14 seconds
+
+:> Trying to find recommendations for: 185213 - Cirque du Soleil: AlegrÃ­a (2001)
+185213 - Cirque du Soleil: AlegrÃ­a (2001) - Children|Documentary
+['Cirque', 'du', 'Soleil', 'AlegrÃ\xada']
+670 records from partial title match
+['Children', 'Documentary']
+7837 records from partial genres match
+target movie average rating: 3.25
+GTS: target_movie_tags: {}
+GTS: 0 users have tagged this movie
+
+185185 - Cirque du Soleil: Corteo (2006) - Children|Documentary
+  Title Similarity: 0.42857142857142855 - (Cirque du Soleil: Corteo (2006))
+  Genres Similarity: 0.3 - (Children|Documentary)
+  Ratings Similarity: 0.255
+ -> Final Similarity: 0.9835714285714285
+
+83324 - Cirque du Soleil: Dralion (2001) - Fantasy|Musical|Mystery
+  Title Similarity: 0.6666666666666666 - (Cirque du Soleil: Dralion (2001))
+  Ratings Similarity: 0.29062499999999997
+ -> Final Similarity: 0.9572916666666667
+
+83326 - Cirque du Soleil: Varekai (2003) - Comedy|Fantasy|Musical|Mystery
+  Title Similarity: 0.42857142857142855 - (Cirque du Soleil: Varekai (2003))
+  Ratings Similarity: 0.26934782608695657
+ -> Final Similarity: 0.6979192546583851
+
+193305 - Cirque Du Soleil: Kooza (2008) - Documentary
+  Title Similarity: 0.25 - (Cirque Du Soleil: Kooza (2008))
+  Genres Similarity: 0.15 - (Documentary)
+  Ratings Similarity: 0.285
+ -> Final Similarity: 0.685
+
+99143 - Cirque du Soleil: Worlds Away (2012) - Fantasy|IMAX
+  Title Similarity: 0.375 - (Cirque du Soleil: Worlds Away (2012))
+  Ratings Similarity: 0.286875
+ -> Final Similarity: 0.661875
+
+185187 - Cirque du Soleil: Journey of Man (2000) - Children|Drama
+  Title Similarity: 0.3333333333333333 - (Cirque du Soleil: Journey of Man (2000))
+  Genres Similarity: 0.09999999999999999 - (Children|Drama)
+  Ratings Similarity: 0.195
+ -> Final Similarity: 0.6283333333333333
+
+154830 - La ClÃ© des Champs (2011) - Children|Documentary
+  Genres Similarity: 0.3 - (Children|Documentary)
+  Ratings Similarity: 0.3
+ -> Final Similarity: 0.6
+
+116953 - Magic Camp (2012) - Children|Documentary
+  Genres Similarity: 0.3 - (Children|Documentary)
+  Ratings Similarity: 0.2978571428571429
+ -> Final Similarity: 0.5978571428571429
+
+170375 - Streit's: Matzo and the American Dream (2015) - Children|Documentary
+  Genres Similarity: 0.3 - (Children|Documentary)
+  Ratings Similarity: 0.285
+ -> Final Similarity: 0.585
+
+162546 - Tiny Giants (2014) - Children|Documentary
+  Genres Similarity: 0.3 - (Children|Documentary)
+  Ratings Similarity: 0.275
+ -> Final Similarity: 0.575
+recommendation took 27.44 seconds
+
+:> Trying to find recommendations for: 166219 - Aschenputtel (1989)
+166219 - Aschenputtel (1989) - (no genres listed)
+['Aschenputtel']
+3 records from partial title match
+['no genres listed']
+4265 records from partial genres match
+target movie average rating: 5.0
+GTS: target_movie_tags: {}
+GTS: 0 users have tagged this movie
+
+149879 - Aschenputtel (2010) - Children|Fantasy
+  Title Similarity: 0.3333333333333333 - (Aschenputtel (2010))
+  Ratings Similarity: 0.3
+ -> Final Similarity: 0.6333333333333333
+
+165405 - Aschenputtel (1955) - Children|Comedy|Fantasy
+  Title Similarity: 0.3333333333333333 - (Aschenputtel (1955))
+  Ratings Similarity: 0.27
+ -> Final Similarity: 0.6033333333333333
+
+123415 - Poster Girl (2010) - (no genres listed)
+  Genres Similarity: 0.3 - ((no genres listed))
+  Ratings Similarity: 0.3
+ -> Final Similarity: 0.6
+
+129733 - La vida sigue igual (1969) - (no genres listed)
+  Genres Similarity: 0.3 - ((no genres listed))
+  Ratings Similarity: 0.3
+ -> Final Similarity: 0.6
+
+130558 - Shark Kill (1976) - (no genres listed)
+  Genres Similarity: 0.3 - ((no genres listed))
+  Ratings Similarity: 0.3
+ -> Final Similarity: 0.6
+
+131777 - Malibu Hot Summer (1981) - (no genres listed)
+  Genres Similarity: 0.3 - ((no genres listed))
+  Ratings Similarity: 0.3
+ -> Final Similarity: 0.6
+
+133297 - Genius on Hold (2013) - (no genres listed)
+  Genres Similarity: 0.3 - ((no genres listed))
+  Ratings Similarity: 0.3
+ -> Final Similarity: 0.6
+
+134346 - Samay: When Time Strikes (2003) - (no genres listed)
+  Genres Similarity: 0.3 - ((no genres listed))
+  Ratings Similarity: 0.3
+ -> Final Similarity: 0.6
+
+134433 - Le nuove comiche (1994) - (no genres listed)
+  Genres Similarity: 0.3 - ((no genres listed))
+  Ratings Similarity: 0.3
+ -> Final Similarity: 0.6
+
+135310 - The Unfaithfuls (1953) - (no genres listed)
+  Genres Similarity: 0.3 - ((no genres listed))
+  Ratings Similarity: 0.3
+ -> Final Similarity: 0.6
+recommendation took 23.92 seconds
+
+:> Trying to find recommendations for: 175775 - Baasha (1995)
+175775 - Baasha (1995) - Action
+['Baasha']
+0 records from partial title match
+['Action']
+7129 records from partial genres match
+target movie average rating: 3.9285714285714284
+GTS: target_movie_tags: {'arch villain': 1}
+GTS: 1 users have tagged this movie
+GTS: Same users have tagged 937 movies from top 1000 movies in the recommendation pool
+
+123561 - Saddle The Wind (1958) - Action
+  Genres Similarity: 0.3 - (Action)
+  Ratings Similarity: 0.2957142857142857
+ -> Final Similarity: 0.5957142857142856
+
+124877 - Thunder Over the Plains (1953) - Action
+  Genres Similarity: 0.3 - (Action)
+  Ratings Similarity: 0.2957142857142857
+ -> Final Similarity: 0.5957142857142856
+
+130284 - Big and Little Wong Tin Bar (1962) - Action
+  Genres Similarity: 0.3 - (Action)
+  Ratings Similarity: 0.2957142857142857
+ -> Final Similarity: 0.5957142857142856
+
+135579 - Dreadnaught (1981) - Action
+  Genres Similarity: 0.3 - (Action)
+  Ratings Similarity: 0.2957142857142857
+ -> Final Similarity: 0.5957142857142856
+
+162766 - The Legend of Speed (1999) - Action
+  Genres Similarity: 0.3 - (Action)
+  Ratings Similarity: 0.2957142857142857
+ -> Final Similarity: 0.5957142857142856
+
+164497 - Dangerous Tour (1969) - Action
+  Genres Similarity: 0.3 - (Action)
+  Ratings Similarity: 0.2957142857142857
+ -> Final Similarity: 0.5957142857142856
+
+171107 - Bloodfight (1989) - Action
+  Genres Similarity: 0.3 - (Action)
+  Ratings Similarity: 0.2957142857142857
+ -> Final Similarity: 0.5957142857142856
+
+173153 - Heroes Shed No Tears (1986) - Action
+  Genres Similarity: 0.3 - (Action)
+  Ratings Similarity: 0.2957142857142857
+ -> Final Similarity: 0.5957142857142856
+
+173313 - A2 Racer (2004) - Action
+  Genres Similarity: 0.3 - (Action)
+  Ratings Similarity: 0.2957142857142857
+ -> Final Similarity: 0.5957142857142856
+
+179067 - Warring Clans (1963) - Action
+  Genres Similarity: 0.3 - (Action)
+  Ratings Similarity: 0.2957142857142857
+ -> Final Similarity: 0.5957142857142856
+recommendation took 77.31 seconds
+
+:> Trying to find recommendations for: 124458 - Hansel and Gretel (1982)
+124458 - Hansel and Gretel (1982) - Children
+['Hansel', 'and', 'Gretel']
+3614 records from partial title match
+['Children']
+2748 records from partial genres match
+target movie average rating: 3.75
+GTS: target_movie_tags: {'candy': 1}
+GTS: 1 users have tagged this movie
+GTS: Same users have tagged 831 movies from top 1000 movies in the recommendation pool
+
+125401 - Hansel and Gretel (1987) - Children|Fantasy
+  Title Similarity: 0.6 - (Hansel and Gretel (1987))
+  Genres Similarity: 0.15 - (Children|Fantasy)
+  Ratings Similarity: 0.285
+ -> Final Similarity: 1.035
+
+5683 - Hansel & Gretel (2002) - Children|Fantasy
+  Title Similarity: 0.3333333333333333 - (Hansel & Gretel (2002))
+  Genres Similarity: 0.15 - (Children|Fantasy)
+  Ratings Similarity: 0.23249999999999998
+  Tags Similarity: 0.0 - ({'children': 1})
+ -> Final Similarity: 0.7158333333333333
+
+153430 - Jill and Joy (2014) - Children
+  Title Similarity: 0.14285714285714285 - (Jill and Joy (2014))
+  Genres Similarity: 0.3 - (Children)
+  Ratings Similarity: 0.24
+ -> Final Similarity: 0.6828571428571428
+
+1426 - Zeus and Roxanne (1997) - Children
+  Title Similarity: 0.14285714285714285 - (Zeus and Roxanne (1997))
+  Genres Similarity: 0.3 - (Children)
+  Ratings Similarity: 0.23179245283018868
+  Tags Similarity: 0.0 - ({'dog': 2, 'George Miller': 1, 'Nostalgia Critic': 1})
+ -> Final Similarity: 0.6746495956873315
+
+186077 - Trooper and the Legend of the Golden Key (2012) - Children
+  Title Similarity: 0.09090909090909091 - (Trooper and the Legend of the Golden Key (2012))
+  Genres Similarity: 0.3 - (Children)
+  Ratings Similarity: 0.255
+ -> Final Similarity: 0.6459090909090909
+
+94972 - Best of Ernie and Bert, The (1988) - Children
+  Title Similarity: 0.1 - (Best of Ernie and Bert, The (1988))
+  Genres Similarity: 0.3 - (Children)
+  Ratings Similarity: 0.22499999999999998
+ -> Final Similarity: 0.625
+
+183479 - Ashes and Embers (1982) - Drama
+  Title Similarity: 0.3333333333333333 - (Ashes and Embers (1982))
+  Ratings Similarity: 0.285
+ -> Final Similarity: 0.6183333333333333
+
+143666 - The Adventures of Mickey Matson and the Copperhead Conspiracy (2012) - Children
+  Title Similarity: 0.07692307692307693 - (The Adventures of Mickey Matson and the Copperhead Conspiracy (2012))
+  Genres Similarity: 0.3 - (Children)
+  Ratings Similarity: 0.24
+ -> Final Similarity: 0.6169230769230769
+
+121202 - Hansel & Gretel (2007) - Drama|Fantasy|Horror|Mystery|Thriller
+  Title Similarity: 0.3333333333333333 - (Hansel & Gretel (2007))
+  Ratings Similarity: 0.2759090909090909
+ -> Final Similarity: 0.6092424242424241
+
+5930 - Brimstone and Treacle (1982) - Drama|Thriller
+  Title Similarity: 0.3333333333333333 - (Brimstone and Treacle (1982))
+  Ratings Similarity: 0.2673333333333333
+  Tags Similarity: 0.0 - ({'70mm': 3, 'gothic': 1})
+ -> Final Similarity: 0.6006666666666667
+recommendation took 28.37 seconds
+
+:> Trying to find recommendations for: 91323 - Sitter, The (2011)
+91323 - Sitter, The (2011) - Comedy
+['Sitter', 'The']
+17751 records from partial title match
+['Comedy']
+15955 records from partial genres match
+target movie average rating: 2.843661971830986
+GTS: target_movie_tags: {'babysitter': 1, 'babysitting': 1, 'Comedy Need to See': 1, 'David Gordon Green': 1, 'funny lines': 1, 'Jonah Hill': 2, 'mindless': 1, 'owned': 1, 'Sam Rockwell': 1}
+GTS: 10 users have tagged this movie
+GTS: Same users have tagged 927 movies from top 1000 movies in the recommendation pool
+
+98013 - Details, The (2011) - Comedy
+  Title Similarity: 0.5 - (Details, The (2011))
+  Genres Similarity: 0.3 - (Comedy)
+  Ratings Similarity: 0.2929726594863297
+ -> Final Similarity: 1.0929726594863298
+
+88785 - Change-Up, The (2011) - Comedy
+  Title Similarity: 0.5 - (Change-Up, The (2011))
+  Genres Similarity: 0.3 - (Comedy)
+  Ratings Similarity: 0.2859014084507043
+ -> Final Similarity: 1.0859014084507044
+
+150732 - The Reunion (2011) - Comedy
+  Title Similarity: 0.5 - (The Reunion (2011))
+  Genres Similarity: 0.3 - (Comedy)
+  Ratings Similarity: 0.24938028169014081
+ -> Final Similarity: 1.0493802816901407
+
+141446 - The Marquis (2011) - Comedy
+  Title Similarity: 0.5 - (The Marquis (2011))
+  Genres Similarity: 0.3 - (Comedy)
+  Ratings Similarity: 0.22061971830985913
+ -> Final Similarity: 1.020619718309859
+
+184601 - The Godmother (2011) - Comedy
+  Title Similarity: 0.5 - (The Godmother (2011))
+  Genres Similarity: 0.3 - (Comedy)
+  Ratings Similarity: 0.20061971830985914
+ -> Final Similarity: 1.000619718309859
+
+93287 - Big Year, The (2011) - Comedy
+  Title Similarity: 0.4 - (Big Year, The (2011))
+  Genres Similarity: 0.3 - (Comedy)
+  Ratings Similarity: 0.2839078539030795
+ -> Final Similarity: 0.9839078539030794
+
+112309 - Pool Boys, The (2011) - Comedy
+  Title Similarity: 0.4 - (Pool Boys, The (2011))
+  Genres Similarity: 0.3 - (Comedy)
+  Ratings Similarity: 0.28188028169014084
+ -> Final Similarity: 0.9818802816901409
+
+95949 - Immature, The (Immaturi) (2011) - Comedy
+  Title Similarity: 0.4 - (Immature, The (Immaturi) (2011))
+  Genres Similarity: 0.3 - (Comedy)
+  Ratings Similarity: 0.27061971830985915
+ -> Final Similarity: 0.970619718309859
+
+83910 - Dilemma, The (2011) - Comedy|Drama
+  Title Similarity: 0.5 - (Dilemma, The (2011))
+  Genres Similarity: 0.15 - (Comedy|Drama)
+  Ratings Similarity: 0.2884200167894786
+ -> Final Similarity: 0.9384200167894786
+
+115291 - Chaperone, The (2011) - Action|Comedy
+  Title Similarity: 0.5 - (Chaperone, The (2011))
+  Genres Similarity: 0.15 - (Action|Comedy)
+  Ratings Similarity: 0.28538028169014085
+ -> Final Similarity: 0.9353802816901409
+recommendation took 37.00 seconds
+
+:> Trying to find recommendations for: 146698 - Bruce Lee, My Brother (2010)
+146698 - Bruce Lee, My Brother (2010) - Drama
+['Bruce', 'Lee', 'My', 'Brother']
+1487 records from partial title match
+['Drama']
+24143 records from partial genres match
+target movie average rating: 3.0
+GTS: target_movie_tags: {}
+GTS: 0 users have tagged this movie
+
+112273 - Brother (Hermano) (2010) - Drama
+  Title Similarity: 0.3333333333333333 - (Brother (Hermano) (2010))
+  Genres Similarity: 0.3 - (Drama)
+  Ratings Similarity: 0.29000000000000004
+ -> Final Similarity: 0.9233333333333333
+
+179379 - My Brother Khosrow - Drama
+  Title Similarity: 0.3333333333333333 - (My Brother Khosrow)
+  Genres Similarity: 0.3 - (Drama)
+  Ratings Similarity: 0.22999999999999998
+ -> Final Similarity: 0.8633333333333333
+
+117907 - My Brother Tom (2001) - Drama
+  Title Similarity: 0.2857142857142857 - (My Brother Tom (2001))
+  Genres Similarity: 0.3 - (Drama)
+  Ratings Similarity: 0.2733333333333333
+ -> Final Similarity: 0.859047619047619
+
+186085 - My Brother Jack (2001) - Drama
+  Title Similarity: 0.2857142857142857 - (My Brother Jack (2001))
+  Genres Similarity: 0.3 - (Drama)
+  Ratings Similarity: 0.27
+ -> Final Similarity: 0.8557142857142856
+
+101413 - My Brother the Devil (2012) - Drama
+  Title Similarity: 0.25 - (My Brother the Devil (2012))
+  Genres Similarity: 0.3 - (Drama)
+  Ratings Similarity: 0.2904
+ -> Final Similarity: 0.8404
+
+90281 - My Joy (Schastye moe) (2010) - Drama
+  Title Similarity: 0.25 - (My Joy (Schastye moe) (2010))
+  Genres Similarity: 0.3 - (Drama)
+  Ratings Similarity: 0.2833333333333333
+ -> Final Similarity: 0.8333333333333334
+
+159413 - My Younger Brother (1962) - Drama
+  Title Similarity: 0.2857142857142857 - (My Younger Brother (1962))
+  Genres Similarity: 0.3 - (Drama)
+  Ratings Similarity: 0.22499999999999998
+ -> Final Similarity: 0.8107142857142856
+
+74595 - Blood Done Sign My Name (2010) - Drama
+  Title Similarity: 0.2222222222222222 - (Blood Done Sign My Name (2010))
+  Genres Similarity: 0.3 - (Drama)
+  Ratings Similarity: 0.28714285714285714
+ -> Final Similarity: 0.8093650793650793
+
+156976 - My Step Brother Frankenstein (2005) - Drama
+  Title Similarity: 0.25 - (My Step Brother Frankenstein (2005))
+  Genres Similarity: 0.3 - (Drama)
+  Ratings Similarity: 0.24
+ -> Final Similarity: 0.79
+
+81755 - My Childhood (1972) - Drama
+  Title Similarity: 0.14285714285714285 - (My Childhood (1972))
+  Genres Similarity: 0.3 - (Drama)
+  Ratings Similarity: 0.294
+ -> Final Similarity: 0.7368571428571429
+recommendation took 33.96 seconds
+
+:> Trying to find recommendations for: 181837 - They're Off (1948)
+181837 - They're Off (1948) - Animation
+["They're", 'Off']
+170 records from partial title match
+['Animation']
+2662 records from partial genres match
+target movie average rating: 3.0
+GTS: target_movie_tags: {'goofy': 1}
+GTS: 1 users have tagged this movie
+GTS: Same users have tagged 779 movies from top 1000 movies in the recommendation pool
+
+181997 - Donald's Off Day (1944) - Animation
+  Title Similarity: 0.16666666666666666 - (Donald's Off Day (1944))
+  Genres Similarity: 0.3 - (Animation)
+  Ratings Similarity: 0.27
+  Tags Similarity: 0.0 - ({'hypochondriac': 1})
+ -> Final Similarity: 0.7366666666666667
+
+181853 - Father's Day Off (1953) - Animation
+  Title Similarity: 0.16666666666666666 - (Father's Day Off (1953))
+  Genres Similarity: 0.3 - (Animation)
+  Ratings Similarity: 0.255
+ -> Final Similarity: 0.7216666666666667
+
+83603 - Fern flowers (Fleur de fougÃ¨re) (1949) - Animation
+  Genres Similarity: 0.3 - (Animation)
+  Ratings Similarity: 0.3
+ -> Final Similarity: 0.6
+
+94423 - Disney Princess Collection: Jasmine's Enchanted Tales: Jasmine's Wish (1999) - Animation
+  Genres Similarity: 0.3 - (Animation)
+  Ratings Similarity: 0.3
+ -> Final Similarity: 0.6
+
+133507 - Echo Planet (2012) - Animation
+  Genres Similarity: 0.3 - (Animation)
+  Ratings Similarity: 0.3
+ -> Final Similarity: 0.6
+
+134623 - Dragon Hill (2002) - Animation
+  Genres Similarity: 0.3 - (Animation)
+  Ratings Similarity: 0.3
+ -> Final Similarity: 0.6
+
+142630 - Macropolis (2012) - Animation
+  Genres Similarity: 0.3 - (Animation)
+  Ratings Similarity: 0.3
+ -> Final Similarity: 0.6
+
+165233 - Winter Days (2003) - Animation
+  Genres Similarity: 0.3 - (Animation)
+  Ratings Similarity: 0.3
+ -> Final Similarity: 0.6
+
+168270 - Ãnima Buenos Aires (2012) - Animation
+  Genres Similarity: 0.3 - (Animation)
+  Ratings Similarity: 0.3
+ -> Final Similarity: 0.6
+
+168294 - Trenk, the Little Knight (2015) - Animation
+  Genres Similarity: 0.3 - (Animation)
+  Ratings Similarity: 0.3
+ -> Final Similarity: 0.6
+recommendation took 109.03 seconds
+
+:> Trying to find recommendations for: 172781 - Ð Ð¿Ð¾ÑƒÑ‚Ñ€Ñƒ Ð¾Ð½Ð¸ Ð¿Ñ€Ð¾ÑÐ½ÑƒÐ»Ð¸ÑÑŒ (2003)
+172781 - Ð Ð¿Ð¾ÑƒÑ‚Ñ€Ñƒ Ð¾Ð½Ð¸ Ð¿Ñ€Ð¾ÑÐ½ÑƒÐ»Ð¸ÑÑŒ (2003) - Comedy|Drama
+['Ð\x90', 'Ð¿Ð¾ÑƒÑ‚Ñ€Ñƒ', 'Ð¾Ð½Ð¸', 'Ð¿Ñ€Ð¾Ñ\x81Ð½ÑƒÐ»Ð¸Ñ\x81ÑŒ']
+1 records from partial title match
+['Comedy', 'Drama']
+35746 records from partial genres match
+target movie average rating: 3.5
+GTS: target_movie_tags: {'hangover': 1}
+GTS: 1 users have tagged this movie
+GTS: Same users have tagged 852 movies from top 1000 movies in the recommendation pool
+
+3410 - Soft Fruit (1999) - Comedy|Drama
+  Genres Similarity: 0.3 - (Comedy|Drama)
+  Ratings Similarity: 0.3
+ -> Final Similarity: 0.6
+
+6376 - Respiro (2002) - Comedy|Drama
+  Genres Similarity: 0.3 - (Comedy|Drama)
+  Ratings Similarity: 0.3
+ -> Final Similarity: 0.6
+
+6589 - Boys Life 4: Four Play (2003) - Comedy|Drama
+  Genres Similarity: 0.3 - (Comedy|Drama)
+  Ratings Similarity: 0.3
+ -> Final Similarity: 0.6
+
+26414 - Wedding, A (1978) - Comedy|Drama
+  Genres Similarity: 0.3 - (Comedy|Drama)
+  Ratings Similarity: 0.3
+ -> Final Similarity: 0.6
+
+26519 - Next of Kin (1984) - Comedy|Drama
+  Genres Similarity: 0.3 - (Comedy|Drama)
+  Ratings Similarity: 0.3
+ -> Final Similarity: 0.6
+
+32333 - Seagull's Laughter, The (MÃ¡vahlÃ¡tur) (2001) - Comedy|Drama
+  Genres Similarity: 0.3 - (Comedy|Drama)
+  Ratings Similarity: 0.3
+ -> Final Similarity: 0.6
+
+34135 - Bonjour Monsieur Shlomi (Ha-Kochavim Shel Shlomi) (2003) - Comedy|Drama
+  Genres Similarity: 0.3 - (Comedy|Drama)
+  Ratings Similarity: 0.3
+ -> Final Similarity: 0.6
+
+43269 - BombÃ³n: El Perro (El perro) (2004) - Comedy|Drama
+  Genres Similarity: 0.3 - (Comedy|Drama)
+  Ratings Similarity: 0.3
+ -> Final Similarity: 0.6
+
+56779 - I Don't Want to Sleep Alone (Hei yan quan) (2006) - Comedy|Drama
+  Genres Similarity: 0.3 - (Comedy|Drama)
+  Ratings Similarity: 0.3
+ -> Final Similarity: 0.6
+
+59858 - Steamboat Round the Bend (1935) - Comedy|Drama
+  Genres Similarity: 0.3 - (Comedy|Drama)
+  Ratings Similarity: 0.3
+ -> Final Similarity: 0.6
+recommendation took 39.24 seconds
+
+:> Trying to find recommendations for: 4132 - Mannequin (1987)
+4132 - Mannequin (1987) - Comedy|Romance
+['Mannequin']
+3 records from partial title match
+['Comedy', 'Romance']
+20040 records from partial genres match
+target movie average rating: 2.667870036101083
+GTS: target_movie_tags: {"80's": 1, "80's cheese": 1, 'Andrew McCarthy': 1, "Can't remember": 1, 'department store': 1, 'prospect preferred': 1}
+GTS: 6 users have tagged this movie
+GTS: Same users have tagged 908 movies from top 1000 movies in the recommendation pool
+
+26741 - Mannequin 2: On the Move (1991) - Comedy|Fantasy|Romance
+  Title Similarity: 0.14285714285714285 - (Mannequin 2: On the Move (1991))
+  Genres Similarity: 0.19999999999999998 - (Comedy|Fantasy|Romance)
+  Ratings Similarity: 0.2735641614702986
+  Tags Similarity: 0.11111111111111112 - ({"80's cheese": 1, 'chase': 1, 'Stewart Raffill': 1})
+ -> Final Similarity: 0.7275324154385525
+
+122 - Boomerang (1992) - Comedy|Romance
+  Genres Similarity: 0.3 - (Comedy|Romance)
+  Ratings Similarity: 0.28835059044445327
+  Tags Similarity: 0.07272727272727274 - ({"Can't remember": 1, 'casanova': 1, 'CLV': 1, 'dating': 1, 'Nudity (Topless - Brief)': 1})
+ -> Final Similarity: 0.661077863171726
+
+85389 - Mannequin (1937) - Drama
+  Title Similarity: 0.3333333333333333 - (Mannequin (1937))
+  Ratings Similarity: 0.290072202166065
+  Tags Similarity: 0.0 - ({'factory girl': 1, 'might like': 1})
+ -> Final Similarity: 0.6234055354993984
+
+6501 - Strange Planet (1999) - Comedy|Romance
+  Genres Similarity: 0.3 - (Comedy|Romance)
+  Ratings Similarity: 0.299927797833935
+ -> Final Similarity: 0.599927797833935
+
+73922 - Running Mates (1992) - Comedy|Romance
+  Genres Similarity: 0.3 - (Comedy|Romance)
+  Ratings Similarity: 0.299927797833935
+ -> Final Similarity: 0.599927797833935
+
+90488 - Perfect Couple, A (1979) - Comedy|Romance
+  Genres Similarity: 0.3 - (Comedy|Romance)
+  Ratings Similarity: 0.299927797833935
+ -> Final Similarity: 0.599927797833935
+
+93263 - Plastic Age, The (1925) - Comedy|Romance
+  Genres Similarity: 0.3 - (Comedy|Romance)
+  Ratings Similarity: 0.299927797833935
+ -> Final Similarity: 0.599927797833935
+
+107326 - AquÃ­ Entre Nos (Between Us) (2012) - Comedy|Romance
+  Genres Similarity: 0.3 - (Comedy|Romance)
+  Ratings Similarity: 0.299927797833935
+ -> Final Similarity: 0.599927797833935
+
+120282 - Now You Know (2002) - Comedy|Romance
+  Genres Similarity: 0.3 - (Comedy|Romance)
+  Ratings Similarity: 0.299927797833935
+ -> Final Similarity: 0.599927797833935
+
+123270 - Without Reservations (1946) - Comedy|Romance
+  Genres Similarity: 0.3 - (Comedy|Romance)
+  Ratings Similarity: 0.299927797833935
+ -> Final Similarity: 0.599927797833935
+recommendation took 37.35 seconds
+
+:> Trying to find recommendations for: 6340 - Only the Strong Survive - A Celebration of Soul (2002)
+6340 - Only the Strong Survive - A Celebration of Soul (2002) - Documentary|Musical
+['Only', 'the', 'Strong', 'Survive', '', 'A', 'Celebration', 'of', 'Soul']
+58097 records from partial title match
+['Documentary', 'Musical']
+6126 records from partial genres match
+target movie average rating: 2.25
+GTS: target_movie_tags: {'musicians': 1, 'woman director': 1}
+GTS: 2 users have tagged this movie
+GTS: Same users have tagged 869 movies from top 1000 movies in the recommendation pool
+
+127 - Silences of the Palace, The (Saimt el Qusur) (1994) - Drama
+  Title Similarity: 0.11764705882352941 - (Silences of the Palace, The (Saimt el Qusur) (1994))
+  Ratings Similarity: 0.2417307692307692
+  Tags Similarity: 1.3333333333333333 - ({'woman director': 1})
+ -> Final Similarity: 1.6927111613876318
+
+560 - Beans of Egypt, Maine, The (1994) - Drama
+  Title Similarity: 0.06666666666666667 - (Beans of Egypt, Maine, The (1994))
+  Ratings Similarity: 0.25426829268292683
+  Tags Similarity: 1.3333333333333333 - ({'woman director': 1})
+ -> Final Similarity: 1.6542682926829269
+
+812 - Magic Hunter (BÃ¼vÃ¶s vadÃ¡sz) (1994) - Drama
+  Title Similarity: 0.0 - (Magic Hunter (BÃ¼vÃ¶s vadÃ¡sz) (1994))
+  Ratings Similarity: 0.2857692307692308
+  Tags Similarity: 1.3333333333333333 - ({'woman director': 1})
+ -> Final Similarity: 1.619102564102564
+
+855 - Every Other Weekend (Un week-end sur deux) (1990) - Drama
+  Title Similarity: 0.0 - (Every Other Weekend (Un week-end sur deux) (1990))
+  Ratings Similarity: 0.2660526315789474
+  Tags Similarity: 1.3333333333333333 - ({'woman director': 1})
+ -> Final Similarity: 1.5993859649122806
+
+791 - Last Klezmer: Leopold Kozlowski, His Life and Music, The (1994) - Documentary
+  Title Similarity: 0.0 - (Last Klezmer: Leopold Kozlowski, His Life and Music, The (1994))
+  Genres Similarity: 0.15 - (Documentary)
+  Ratings Similarity: 0.2192016806722689
+  Tags Similarity: 0.6666666666666666 - ({'musicians': 1, 'Yale Strom': 1})
+ -> Final Similarity: 1.0358683473389356
+
+573 - Ciao, Professore! (Io speriamo che me la cavo) (1992) - Drama
+  Title Similarity: 0.0 - (Ciao, Professore! (Io speriamo che me la cavo) (1992))
+  Ratings Similarity: 0.22777777777777777
+  Tags Similarity: 0.6666666666666666 - ({'Lina WertmÃ¼ller': 1, 'woman director': 1})
+ -> Final Similarity: 0.8944444444444444
+
+789 - I, the Worst of All (Yo, la peor de todas) (1990) - Drama
+  Title Similarity: 0.10526315789473684 - (I, the Worst of All (Yo, la peor de todas) (1990))
+  Ratings Similarity: 0.25096153846153846
+  Tags Similarity: 0.5333333333333333 - ({'17th century': 2, 'woman director': 1})
+ -> Final Similarity: 0.8895580296896086
+
+759 - Maya Lin: A Strong Clear Vision (1994) - Documentary
+  Title Similarity: 0.13333333333333333 - (Maya Lin: A Strong Clear Vision (1994))
+  Genres Similarity: 0.15 - (Documentary)
+  Ratings Similarity: 0.20361618798955614
+  Tags Similarity: 0.4 - ({'Freida Lee Mock': 1, 'Oscar (Best Documentary Feature)': 1, 'woman director': 1})
+ -> Final Similarity: 0.8869495213228895
+
+5820 - Standing in the Shadows of Motown (2002) - Documentary|Musical
+  Title Similarity: 0.21428571428571427 - (Standing in the Shadows of Motown (2002))
+  Genres Similarity: 0.3 - (Documentary|Musical)
+  Ratings Similarity: 0.20345841784989857
+ -> Final Similarity: 0.7177441321356128
+
+110794 - Out of the Blue (2002) - Documentary
+  Title Similarity: 0.25 - (Out of the Blue (2002))
+  Genres Similarity: 0.15 - (Documentary)
+  Ratings Similarity: 0.3
+ -> Final Similarity: 0.7
+recommendation took 47.55 seconds
+
+:> Trying to find recommendations for: 81633 - Dark and Stormy Night (2009)
+81633 - Dark and Stormy Night (2009) - Comedy|Mystery
+['Dark', 'and', 'Stormy', 'Night']
+4697 records from partial title match
+['Comedy', 'Mystery']
+18381 records from partial genres match
+target movie average rating: 3.8333333333333335
+GTS: target_movie_tags: {}
+GTS: 0 users have tagged this movie
+
+80967 - Harmony and Me (2009) - Comedy
+  Title Similarity: 0.2857142857142857 - (Harmony and Me (2009))
+  Genres Similarity: 0.15 - (Comedy)
+  Ratings Similarity: 0.27999999999999997
+ -> Final Similarity: 0.7157142857142857
+
+157188 - White Night (2009) - Mystery|Romance
+  Title Similarity: 0.3333333333333333 - (White Night (2009))
+  Genres Similarity: 0.09999999999999999 - (Mystery|Romance)
+  Ratings Similarity: 0.26499999999999996
+ -> Final Similarity: 0.6983333333333333
+
+72340 - Night to Remember, A (1942) - Comedy|Mystery
+  Title Similarity: 0.1111111111111111 - (Night to Remember, A (1942))
+  Genres Similarity: 0.3 - (Comedy|Mystery)
+  Ratings Similarity: 0.2718181818181818
+ -> Final Similarity: 0.6829292929292929
+
+176485 - Frankenstein and the Vampyre: A Dark and Stormy Night (2014) - Documentary
+  Title Similarity: 0.4 - (Frankenstein and the Vampyre: A Dark and Stormy Night (2014))
+  Ratings Similarity: 0.27999999999999997
+ -> Final Similarity: 0.6799999999999999
+
+71899 - Mary and Max (2009) - Animation|Comedy|Drama
+  Title Similarity: 0.2857142857142857 - (Mary and Max (2009))
+  Genres Similarity: 0.075 - (Animation|Comedy|Drama)
+  Ratings Similarity: 0.29379859311366163
+ -> Final Similarity: 0.6545128788279473
+
+124213 - Whistling in the Dark (1941) - Comedy|Mystery
+  Title Similarity: 0.1111111111111111 - (Whistling in the Dark (1941))
+  Genres Similarity: 0.3 - (Comedy|Mystery)
+  Ratings Similarity: 0.24249999999999997
+ -> Final Similarity: 0.653611111111111
+
+123145 - Mrs. O'Malley and Mr. Malone (1950) - Comedy|Mystery
+  Title Similarity: 0.1 - (Mrs. O'Malley and Mr. Malone (1950))
+  Genres Similarity: 0.3 - (Comedy|Mystery)
+  Ratings Similarity: 0.24999999999999994
+ -> Final Similarity: 0.6499999999999999
+
+65927 - Night Train (2009) - Action|Mystery|Thriller
+  Title Similarity: 0.3333333333333333 - (Night Train (2009))
+  Genres Similarity: 0.075 - (Action|Mystery|Thriller)
+  Ratings Similarity: 0.23428571428571426
+ -> Final Similarity: 0.6426190476190476
+
+173795 - Aniskin and Fantomas (1974) - Comedy|Mystery
+  Title Similarity: 0.125 - (Aniskin and Fantomas (1974))
+  Genres Similarity: 0.3 - (Comedy|Mystery)
+  Ratings Similarity: 0.19999999999999998
+ -> Final Similarity: 0.625
+
+67695 - Observe and Report (2009) - Action|Comedy
+  Title Similarity: 0.2857142857142857 - (Observe and Report (2009))
+  Genres Similarity: 0.09999999999999999 - (Action|Comedy)
+  Ratings Similarity: 0.23870370370370367
+ -> Final Similarity: 0.6244179894179893
+recommendation took 33.83 seconds
+
+:> Trying to find recommendations for: 86057 - Outrageous Class (Hababam sinifi) (1975)
+86057 - Outrageous Class (Hababam sinifi) (1975) - Comedy|Drama
+['Outrageous', 'Class', 'Hababam', 'sinifi']
+75 records from partial title match
+['Comedy', 'Drama']
+35746 records from partial genres match
+target movie average rating: 3.8
+GTS: target_movie_tags: {'acting': 1, 'Ertem Egilmez': 1}
+GTS: 2 users have tagged this movie
+GTS: Same users have tagged 566 movies from top 1000 movies in the recommendation pool
+
+86087 - Dunce Class on Vacation, The (Hababam sinifi tatilde) (1978) - Comedy
+  Title Similarity: 0.2727272727272727 - (Dunce Class on Vacation, The (Hababam sinifi tatilde) (1978))
+  Genres Similarity: 0.15 - (Comedy)
+  Ratings Similarity: 0.2908571428571428
+  Tags Similarity: 0.6666666666666666 - ({'comedy': 1, 'Ertem Egilmez': 1})
+ -> Final Similarity: 1.3802510822510823
+
+128868 - The Chaos Class Failed the Class (1976) - Comedy
+  Title Similarity: 0.1 - (The Chaos Class Failed the Class (1976))
+  Genres Similarity: 0.15 - (Comedy)
+  Ratings Similarity: 0.289875
+  Tags Similarity: 0.6666666666666666 - ({'based on novel or book': 1, 'Ertem Egilmez': 1})
+ -> Final Similarity: 1.2065416666666666
+
+86083 - Crazy Class Wakes Up, The (Hababam sinifi uyaniyor) (1977) - Comedy
+  Title Similarity: 0.2727272727272727 - (Crazy Class Wakes Up, The (Hababam sinifi uyaniyor) (1977))
+  Genres Similarity: 0.15 - (Comedy)
+  Ratings Similarity: 0.297
+  Tags Similarity: 0.4 - ({'comedy': 1, 'Ertem Egilmez': 1, 'high school': 1})
+ -> Final Similarity: 1.1197272727272727
+
+1162 - Ruling Class, The (1972) - Comedy|Drama
+  Title Similarity: 0.125 - (Ruling Class, The (1972))
+  Genres Similarity: 0.3 - (Comedy|Drama)
+  Ratings Similarity: 0.29846916565900844
+  Tags Similarity: 0.0 - ({'arthur lowe': 1, 'asylum': 1, 'BD-R': 1, 'biting': 1, 'Criterion': 2, 'Favorites': 1, 'jesus': 2, 'netflix': 1})
+ -> Final Similarity: 0.7234691656590084
+
+188855 - Orchestra Class (2017) - Comedy|Drama
+  Title Similarity: 0.14285714285714285 - (Orchestra Class (2017))
+  Genres Similarity: 0.3 - (Comedy|Drama)
+  Ratings Similarity: 0.252
+ -> Final Similarity: 0.6948571428571428
+
+973 - Meet John Doe (1941) - Comedy|Drama
+  Genres Similarity: 0.3 - (Comedy|Drama)
+  Ratings Similarity: 0.2982083333333333
+  Tags Similarity: 0.08391608391608393 - ({'acting': 2, 'AFI 100 (Cheers)': 1, 'anti-fascism': 1, 'baseball player': 1, 'BD-R': 1, 'class issues': 1, 'compare: This Is Our Land (2017)': 1, 'Frank Capra': 1, 'journalism': 1, 'pro american': 1})
+ -> Final Similarity: 0.6821244172494172
+
+193381 - National Class Category Up to 785ccm (1979) - Comedy|Drama
+  Title Similarity: 0.09090909090909091 - (National Class Category Up to 785ccm (1979))
+  Genres Similarity: 0.3 - (Comedy|Drama)
+  Ratings Similarity: 0.22799999999999998
+ -> Final Similarity: 0.6189090909090909
+
+31154 - Heartlands (2002) - Comedy|Drama
+  Genres Similarity: 0.3 - (Comedy|Drama)
+  Ratings Similarity: 0.3
+ -> Final Similarity: 0.6
+
+133361 - The Golden Calf (1968) - Comedy|Drama
+  Genres Similarity: 0.3 - (Comedy|Drama)
+  Ratings Similarity: 0.3
+ -> Final Similarity: 0.6
+
+133780 - GÃ¼eros (2014) - Comedy|Drama
+  Genres Similarity: 0.3 - (Comedy|Drama)
+  Ratings Similarity: 0.3
+ -> Final Similarity: 0.6
+recommendation took 40.50 seconds
+
+:> Trying to find recommendations for: 177853 - The Journey Is the Destination (2016)
+177853 - The Journey Is the Destination (2016) - Drama
+['The', 'Journey', 'Is', 'the', 'Destination']
+20967 records from partial title match
+['Drama']
+24143 records from partial genres match
+target movie average rating: None
+GTS: target_movie_tags: {'africa': 1}
+GTS: 1 users have tagged this movie
+GTS: Same users have tagged 883 movies from top 1000 movies in the recommendation pool
+
+1867 - Tarzan and the Lost City (1998) - Action|Adventure
+  Title Similarity: 0.09090909090909091 - (Tarzan and the Lost City (1998))
+  Tags Similarity: 1.3333333333333333 - ({'africa': 1, 'Edgar Rice Burroughs': 1})
+ -> Final Similarity: 1.424242424242424
+
+179207 - The Summer Is Gone (2016) - Drama
+  Title Similarity: 0.375 - (The Summer Is Gone (2016))
+  Genres Similarity: 0.3 - (Drama)
+ -> Final Similarity: 0.675
+
+152545 - The Commune (2016) - Drama
+  Title Similarity: 0.2857142857142857 - (The Commune (2016))
+  Genres Similarity: 0.3 - (Drama)
+ -> Final Similarity: 0.5857142857142856
+
+155599 - The Daughter (2016) - Drama
+  Title Similarity: 0.2857142857142857 - (The Daughter (2016))
+  Genres Similarity: 0.3 - (Drama)
+ -> Final Similarity: 0.5857142857142856
+
+160678 - The Phenom (2016) - Drama
+  Title Similarity: 0.2857142857142857 - (The Phenom (2016))
+  Genres Similarity: 0.3 - (Drama)
+ -> Final Similarity: 0.5857142857142856
+
+160876 - The Innocents (2016) - Drama
+  Title Similarity: 0.2857142857142857 - (The Innocents (2016))
+  Genres Similarity: 0.3 - (Drama)
+ -> Final Similarity: 0.5857142857142856
+
+160988 - The Student (2016) - Drama
+  Title Similarity: 0.2857142857142857 - (The Student (2016))
+  Genres Similarity: 0.3 - (Drama)
+ -> Final Similarity: 0.5857142857142856
+
+161976 - The Mobfathers (2016) - Drama
+  Title Similarity: 0.2857142857142857 - (The Mobfathers (2016))
+  Genres Similarity: 0.3 - (Drama)
+ -> Final Similarity: 0.5857142857142856
+
+162204 - The Land (2016) - Drama
+  Title Similarity: 0.2857142857142857 - (The Land (2016))
+  Genres Similarity: 0.3 - (Drama)
+ -> Final Similarity: 0.5857142857142856
+
+162732 - The Model (2016) - Drama
+  Title Similarity: 0.2857142857142857 - (The Model (2016))
+  Genres Similarity: 0.3 - (Drama)
+ -> Final Similarity: 0.5857142857142856
+recommendation took 16.13 seconds
+
+:> Trying to find recommendations for: 167082 - Kiss Me, Kill Me (2015)
+167082 - Kiss Me, Kill Me (2015) - Drama|Thriller
+['Kiss', 'Me', 'Kill', 'Me']
+5922 records from partial title match
+['Drama', 'Thriller']
+29011 records from partial genres match
+target movie average rating: 2.0
+GTS: target_movie_tags: {'director lgbt': 1, 'film noir': 1}
+GTS: 2 users have tagged this movie
+GTS: Same users have tagged 857 movies from top 1000 movies in the recommendation pool
+
+177299 - Kill Me Please (2015) - Drama|Thriller
+  Title Similarity: 0.6 - (Kill Me Please (2015))
+  Genres Similarity: 0.3 - (Drama|Thriller)
+  Ratings Similarity: 0.255
+ -> Final Similarity: 1.1549999999999998
+
+101428 - Kill for Me (2013) - Drama|Thriller
+  Title Similarity: 0.3333333333333333 - (Kill for Me (2013))
+  Genres Similarity: 0.3 - (Drama|Thriller)
+  Ratings Similarity: 0.24857142857142853
+ -> Final Similarity: 0.8819047619047619
+
+119675 - Kiss Me in the Rain (1999) - Drama|Thriller
+  Title Similarity: 0.25 - (Kiss Me in the Rain (1999))
+  Genres Similarity: 0.3 - (Drama|Thriller)
+  Ratings Similarity: 0.3
+ -> Final Similarity: 0.8500000000000001
+
+147921 - Submerged (2015) - Drama|Thriller
+  Title Similarity: 0.2 - (Submerged (2015))
+  Genres Similarity: 0.3 - (Drama|Thriller)
+  Ratings Similarity: 0.2807142857142857
+ -> Final Similarity: 0.7807142857142857
+
+4038 - Kill Me Again (1989) - Crime|Drama|Thriller
+  Title Similarity: 0.3333333333333333 - (Kill Me Again (1989))
+  Genres Similarity: 0.19999999999999998 - (Crime|Drama|Thriller)
+  Ratings Similarity: 0.2284090909090909
+  Tags Similarity: 0.0 - ({'bag of money': 1, "plot points that don't make sense.": 1})
+ -> Final Similarity: 0.7617424242424242
+
+165727 - Consumed (2015) - Drama|Thriller
+  Title Similarity: 0.2 - (Consumed (2015))
+  Genres Similarity: 0.3 - (Drama|Thriller)
+  Ratings Similarity: 0.258
+ -> Final Similarity: 0.758
+
+163805 - My Lonely Me (2015) - Drama
+  Title Similarity: 0.3333333333333333 - (My Lonely Me (2015))
+  Genres Similarity: 0.15 - (Drama)
+  Ratings Similarity: 0.27
+ -> Final Similarity: 0.7533333333333333
+
+5966 - Kiss Before Dying, A (1956) - Film-Noir|Mystery
+  Title Similarity: 0.125 - (Kiss Before Dying, A (1956))
+  Ratings Similarity: 0.22177215189873417
+  Tags Similarity: 0.4 - ({'An American Tragedy (Dreiser)': 1, 'classic noir': 1, 'film noir': 1})
+ -> Final Similarity: 0.7467721518987342
+
+27411 - Freeze Me (2000) - Drama|Thriller
+  Title Similarity: 0.16666666666666666 - (Freeze Me (2000))
+  Genres Similarity: 0.3 - (Drama|Thriller)
+  Ratings Similarity: 0.2733333333333333
+ -> Final Similarity: 0.74
+
+137262 - U Want Me 2 Kill Him? (2014) - Drama|Thriller
+  Title Similarity: 0.2222222222222222 - (U Want Me 2 Kill Him? (2014))
+  Genres Similarity: 0.3 - (Drama|Thriller)
+  Ratings Similarity: 0.216
+ -> Final Similarity: 0.7382222222222221
+recommendation took 98.11 seconds
+
+:> Trying to find recommendations for: 54274 - I Know Who Killed Me (2007)
+54274 - I Know Who Killed Me (2007) - Crime|Drama|Thriller
+['I', 'Know', 'Who', 'Killed', 'Me']
+38703 records from partial title match
+['Crime', 'Drama', 'Thriller']
+30260 records from partial genres match
+target movie average rating: 1.8347457627118644
+GTS: target_movie_tags: {'college': 1, 'Golden Raspberry (Worst Actress)': 1, 'gruesome (torture scenes)': 1, 'kidnapping': 1, 'torture': 1}
+GTS: 5 users have tagged this movie
+GTS: Same users have tagged 875 movies from top 1000 movies in the recommendation pool
+
+178009 - I Know What I Saw (2007) - Crime|Thriller
+  Title Similarity: 0.375 - (I Know What I Saw (2007))
+  Genres Similarity: 0.19999999999999998 - (Crime|Thriller)
+  Ratings Similarity: 0.21991525423728814
+ -> Final Similarity: 0.7949152542372881
+
+54778 - Illegal Tender (2007) - Crime|Drama|Thriller
+  Title Similarity: 0.125 - (Illegal Tender (2007))
+  Genres Similarity: 0.3 - (Crime|Drama|Thriller)
+  Ratings Similarity: 0.26758474576271185
+ -> Final Similarity: 0.6925847457627119
+
+6330 - People I Know (2002) - Crime|Drama
+  Title Similarity: 0.25 - (People I Know (2002))
+  Genres Similarity: 0.19999999999999998 - (Crime|Drama)
+  Ratings Similarity: 0.23868474576271184
+ -> Final Similarity: 0.6886847457627118
+
+98076 - I Accuse (2003) - Crime|Drama|Thriller
+  Title Similarity: 0.125 - (I Accuse (2003))
+  Genres Similarity: 0.3 - (Crime|Drama|Thriller)
+  Ratings Similarity: 0.26008474576271184
+ -> Final Similarity: 0.6850847457627118
+
+169388 - Missing (2007) - Crime|Drama|Thriller
+  Title Similarity: 0.14285714285714285 - (Missing (2007))
+  Genres Similarity: 0.3 - (Crime|Drama|Thriller)
+  Ratings Similarity: 0.23008474576271185
+ -> Final Similarity: 0.6729418886198547
+
+4390 - Rape Me (Baise-moi) (2000) - Crime|Drama|Thriller
+  Title Similarity: 0.1111111111111111 - (Rape Me (Baise-moi) (2000))
+  Genres Similarity: 0.3 - (Crime|Drama|Thriller)
+  Ratings Similarity: 0.2543155149934811
+ -> Final Similarity: 0.6654266261045922
+
+100015 - Chicago Massacre: Richard Speck (2007) - Crime|Drama|Thriller
+  Title Similarity: 0.1 - (Chicago Massacre: Richard Speck (2007))
+  Genres Similarity: 0.3 - (Crime|Drama|Thriller)
+  Ratings Similarity: 0.26008474576271184
+ -> Final Similarity: 0.6600847457627119
+
+164254 - The Big I Am (2010) - Crime|Drama|Thriller
+  Title Similarity: 0.1 - (The Big I Am (2010))
+  Genres Similarity: 0.3 - (Crime|Drama|Thriller)
+  Ratings Similarity: 0.26008474576271184
+ -> Final Similarity: 0.6600847457627119
+
+58078 - Air I Breathe, The (2007) - Crime|Drama|Romance|Thriller
+  Title Similarity: 0.2222222222222222 - (Air I Breathe, The (2007))
+  Genres Similarity: 0.22499999999999998 - (Crime|Drama|Romance|Thriller)
+  Ratings Similarity: 0.21116317713526087
+ -> Final Similarity: 0.6583853993574831
+
+191713 - Noise (2007) - Crime|Drama|Thriller
+  Title Similarity: 0.14285714285714285 - (Noise (2007))
+  Genres Similarity: 0.3 - (Crime|Drama|Thriller)
+  Ratings Similarity: 0.20008474576271185
+ -> Final Similarity: 0.6429418886198547
+recommendation took 47.20 seconds
+
+
+ ====================== Benchmark done ====================
+Total recommendation actions: 20
+Fastest recommendation time: 16.13 seconds
+Slowest recommendation time: 123.94 seconds
+Average recommendation time: 52.25 seconds
+Total time: 1045.03 seconds
+=============================================================

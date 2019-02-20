@@ -89,6 +89,16 @@ class RecommendationEngine(object):
         self.target_movie = self.db.query(Movie).filter_by(
             title=movie_title).first()
 
+    def trim_recommendation_pool(self, n):
+        """
+        Trim reccommendation pool.
+
+        Keeping only top n movies by final_similarity score.
+        """
+        # {k:v for k, v in list(d.items())[:2]}
+        self.recommendation_pool = {
+            k: v for k, v in list(self.recommendation_pool.items())[:n]}
+
     def update_recommendation_pool(self):
         """Update overall similarity index of recommendation pool."""
         for k in self.recommendation_pool.keys():
@@ -155,9 +165,11 @@ class RecommendationEngine(object):
     def get_title_similarity(self):
         """Fetch movies that are similar in title."""
         title_words = []
+        ignore_words = ['the', 'and', 'or', 'to', 'at', 'on', 'of']
         for w in self.target_movie.title.split(' '):
             w = w.strip('- ,:(){}[]')
-            title_words.append(w)
+            if w.lower() not in ignore_words:
+                title_words.append(w)
 
         # if last word is a number then it's an year and should be ignored.
         if len(title_words) > 1 and title_words[-1].isdigit():
@@ -175,7 +187,7 @@ class RecommendationEngine(object):
         TSW = self.TITLE_SIMILARITY_WEIGHT
         for rec in res:
             mc_title = string_cleanup(rec.title)
-            smid = str(rec.movie_id)
+            smid = rec.movie_id
             if smid not in self.recommendation_pool:
                 self.recommendation_pool[smid] = {
                     'movie_obj': rec,
@@ -196,25 +208,20 @@ class RecommendationEngine(object):
             genre_words.append(w)
 
         print(genre_words)
+
         res = self.db.query(Movie).filter(
-            Movie.movie_id != self.target_movie.movie_id).filter(or_(
+            Movie.movie_id != self.target_movie.movie_id).filter(
+                Movie.movie_id.in_(self.recommendation_pool.keys())
+            ).filter(or_(
                 Movie.genres.ilike(r'%' + gw + r'%') for gw in genre_words
             )).all()
 
         print("%i records from partial genres match" % len(res))
         GSW = self.GENRES_SIMILARITY_WEIGHT
         for rec in res:
-            smid = str(rec.movie_id)
-            if smid not in self.recommendation_pool:
-                self.recommendation_pool[smid] = {
-                    'movie_obj': rec,
-                    'genres_similarity': jaccard_index(
-                        self.target_movie.genres, rec.genres, '|') * GSW
-                }
-            else:
-                self.recommendation_pool[smid]['genres_similarity'] = \
-                    jaccard_index(
-                        self.target_movie.genres, rec.genres, '|') * GSW
+            smid = rec.movie_id
+            self.recommendation_pool[smid]['genres_similarity'] = \
+                jaccard_index(self.target_movie.genres, rec.genres, '|') * GSW
 
     def get_tags_similarity(self):
         """Get tags similarity."""
@@ -231,7 +238,9 @@ class RecommendationEngine(object):
               % len(user_ids))
 
         rmids = list(self.recommendation_pool.keys())
-        rmids = rmids[:self.number_of_recommendations * 100]
+        if len(user_ids) == 0 or len(rmids) == 0:
+            return tags_similarity
+
         movie_ids_query = """
             SELECT distinct movie_id
             FROM tags
@@ -246,7 +255,7 @@ class RecommendationEngine(object):
 
         TSW = self.TAGS_SIMILARITY_WEIGHT
         for rec in res:
-            movie_id = str(rec[0])
+            movie_id = rec[0]
             movie_tags = self.get_tags_count(movie_id)
 
             # Since we only process tags for movies in the recommendation
@@ -296,8 +305,12 @@ class RecommendationEngine(object):
         target_movie_average_rating = res[0][0]
         print("target movie average rating: " +
               str(target_movie_average_rating))
+        if target_movie_average_rating is None:
+            return
 
         pmids = list(self.recommendation_pool.keys())
+        if not pmids:
+            return None
 
         # rating_similarity dict contains movie_ids as keys and difference
         # in rating as value
@@ -318,7 +331,7 @@ class RecommendationEngine(object):
 
         RSW = self.RATING_SIMILARITY_WEIGHT
         for rec in res:
-            movie_id = str(rec[0])
+            movie_id = rec[0]
             rs = (5.0-rec[1]) * (RSW/5.0)
 
             # Since we only process tags for movies in the recommendation
@@ -346,7 +359,8 @@ if __name__ == '__main__':
     print("{R.movie_id} - {R.title} - {R.genres}".format(R=R.target_movie))
     R.get_title_similarity()
     R.get_genre_similarity()
-    R.get_ratings_similarity()
+    R.trim_recommendation_pool(num_recommendations*10)
+    # R.get_ratings_similarity()
     R.get_tags_similarity()
     R.update_recommendation_pool()
     R.show_recommendation_pool()

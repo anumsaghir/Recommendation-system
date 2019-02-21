@@ -86,26 +86,6 @@ LOAD DATA LOCAL INFILE '/home/hduser1/Downloads/ml-20m/movies.csv' INTO TABLE mo
 ```bash
 LOAD DATA LOCAL INFILE '/home/hduser1/Downloads/ml-20m/tags.csv' INTO TABLE tags FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\r\n' IGNORE 1 ROWS;
 ```
-#### TABLE ratings
-
-```bash
-LOAD DATA LOCAL INFILE '/home/hduser1/Downloads/ml-20m/rating.csv' INTO TABLE ratings FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\r\n' IGNORE 1 ROWS;
-```
-#### TABLE genome_scores
-
-```bash
-LOAD DATA LOCAL INFILE '/home/hduser1/Downloads/ml-20m/genome-scores.csv' INTO TABLE genome-scores FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\r\n' IGNORE 1 ROWS;
-```
-#### TABLE genome_tags
-
-```bash
-LOAD DATA LOCAL INFILE '/home/hduser1/Downloads/ml-20m/genome-tags.csv' INTO TABLE genome_tags FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\r\n' IGNORE 1 ROWS;
-```
-#### TABLE links
-
-```bash
-LOAD DATA LOCAL INFILE '/home/hduser1/Downloads/ml-20m/links.csv' INTO TABLE links FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\r\n' IGNORE 1 ROWS;
-```
 
 ### Creating indexes
 
@@ -114,7 +94,6 @@ For faster lookups, we index most used fields.
 ```sql
 CREATE INDEX movie_titles ON movies(title);
 CREATE INDEX movie_genres ON movies(genres);
-CREATE INDEX ratings_rating ON ratings(rating);
 CREATE INDEX tags_tags ON tags(tags);
 ```
 

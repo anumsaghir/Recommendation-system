@@ -68,13 +68,11 @@ class RecommendationEngine(object):
 
     1. Fetch number of recommendations * 10 records based on title,
        genres and tags similarity
-    2. Find rating similarity for these records with the target movie
-    3. List top number of recommendations records that are closest match
+    2. List top number of recommendations records that are closest match
     """
 
     TITLE_SIMILARITY_WEIGHT = 1.0
     GENRES_SIMILARITY_WEIGHT = 0.3
-    RATING_SIMILARITY_WEIGHT = 0.3
     TAGS_SIMILARITY_WEIGHT = 0.4
 
     def __init__(self):
@@ -116,10 +114,6 @@ class RecommendationEngine(object):
                 self.recommendation_pool[k]['final_similarity'] += \
                     self.recommendation_pool[k]['tags_similarity']
 
-            if 'ratings_similarity' in self.recommendation_pool[k]:
-                self.recommendation_pool[k]['final_similarity'] += \
-                    self.recommendation_pool[k]['ratings_similarity']
-
         self.recommendation_pool = OrderedDict(
             sorted(
                 self.recommendation_pool.items(),
@@ -145,10 +139,6 @@ class RecommendationEngine(object):
             if 'genres_similarity' in rdata:
                 print("  Genres Similarity: {} - ({})".format(
                     rdata['genres_similarity'], rdata['movie_obj'].genres))
-
-            if 'ratings_similarity' in rdata:
-                print("  Ratings Similarity: {}".format(
-                    rdata['ratings_similarity']))
 
             if 'tags_similarity' in rdata:
                 print("  Tags Similarity: {} - ({})".format(
@@ -296,49 +286,6 @@ class RecommendationEngine(object):
 
         return tags_occured
 
-    def get_ratings_similarity(self):
-        """Get ratings similarity against movies in the recommendation pool."""
-        # Get average rating of the target movie
-        query_1 = "SELECT AVG(rating) FROM ratings WHERE movie_id=%i" % \
-            self.target_movie.movie_id
-        res = self.db.execute(query_1).fetchall()
-        target_movie_average_rating = res[0][0]
-        print("target movie average rating: " +
-              str(target_movie_average_rating))
-        if target_movie_average_rating is None:
-            return
-
-        pmids = list(self.recommendation_pool.keys())
-        if not pmids:
-            return None
-
-        # rating_similarity dict contains movie_ids as keys and difference
-        # in rating as value
-        self.rating_similarity = {}
-        query_2 = """
-        SELECT movie_id, ABS(({tmr} - AVG(rating))) as rating_difference
-        FROM ratings r
-        WHERE movie_id IN ({pool_movie_ids})
-        GROUP BY movie_id
-        """.format(
-            tmr=target_movie_average_rating,
-            pool_movie_ids=str(pmids)[1:-1]
-        )
-
-        res = self.db.execute(query_2).fetchall()
-        for rec in res:
-            self.rating_similarity[rec[0]] = rec[1]
-
-        RSW = self.RATING_SIMILARITY_WEIGHT
-        for rec in res:
-            movie_id = rec[0]
-            rs = (5.0-rec[1]) * (RSW/5.0)
-
-            # Since we only process tags for movies in the recommendation
-            # pool; we won't have cases where movie record is not already
-            # present in the recommendation pool.
-            self.recommendation_pool[movie_id]['ratings_similarity'] = rs
-
 
 if __name__ == '__main__':
     if len(sys.argv) < 3:
@@ -360,7 +307,6 @@ if __name__ == '__main__':
     R.get_title_similarity()
     R.get_genre_similarity()
     R.trim_recommendation_pool(num_recommendations*10)
-    # R.get_ratings_similarity()
     R.get_tags_similarity()
     R.update_recommendation_pool()
     R.show_recommendation_pool()
